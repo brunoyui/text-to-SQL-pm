@@ -38,7 +38,7 @@ This section contains details of each SQL pattern template founded and the compl
 
 ### SQL patterns templates and results
 
-#### Easy
+### Easy
 |  Symbol   |                                           SQL Pattern                                                       |
 |-----------|-------------------------------------------------------------------------------------------------------------|
 | Sc        | SELECT *concept* FROM event\_log (ORDER BY *concept*<sup>+</sup>)<sup>*</sup>                              |
@@ -63,7 +63,7 @@ This section contains details of each SQL pattern template founded and the compl
 *Portuguese*
 ![My Image](graphs_results/results_easy_EX_pt.png)
 
-#### Medium
+### Medium
 |  Symbol   |                                           SQL Pattern                                                       |
 |-----------|-------------------------------------------------------------------------------------------------------------|
 | Sc<sup>+</sup> | SELECT (*concept*<sup>+</sup>) from event\_log (ORDER BY *concept*)<sup>*</sup> |
@@ -90,11 +90,11 @@ This section contains details of each SQL pattern template founded and the compl
 *Portuguese*
 ![My Image](graphs_results/results_medium_EX_pt.png)
 
-#### Hard
+### Hard
 
-#### Extra
+### Extra
 
-#### No hardness
+### No hardness
 
 
 
