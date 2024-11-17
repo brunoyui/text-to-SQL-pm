@@ -41,23 +41,27 @@ This section contains details of each SQL pattern template founded and the compl
 #### Easy
 |  Symbol   |                                           SQL Pattern                                                       |
 |-----------|-------------------------------------------------------------------------------------------------------------|
-| Sc        | SELECT \textit{concept} FROM event\_log (ORDER BY (\textit{concept$^+$}))*                                  |
-| ScFc      | SELECT \textit{concept} FROM event\_log WHERE (FILTER \textit{concept}) (ORDER BY (\textit{concept$^+$}))*  | 
-| ScGFc$^+$ | SELECT \textit{concept} FROM event\_log GROUP BY \textit{concept} HAVING (FILTER \textit{concept})$^+$      |
-| Ac        | SELECT AGG(\textit{concept}) FROM event\_log                                                                |           
-| AcFc      | SELECT AGG(\textit{concept}) FROM event\_log (FILTER \textit{concept})                                      |
+| Sc        | SELECT *concept* FROM event\_log (ORDER BY (*concept$^+$*))*                                  |
+| ScFc      | SELECT *concept* FROM event\_log WHERE (FILTER *concept*) (ORDER BY (\textit{concept$^+$}))*  | 
+| ScGFc$^+$ | SELECT *concept* FROM event\_log GROUP BY *concept* HAVING (FILTER *concept*)$^+$      |
+| Ac        | SELECT AGG(*concept*) FROM event\_log                                                                |           
+| AcFc      | SELECT AGG(*concept*) FROM event\_log (FILTER *concept*)                                      |
 
-Exact Match Accuracy results
-English
+**Exact Match Accuracy**
+
+*English*
 ![My Image](graphs_results/results_easy_EM.png)
-Portuguese
+
+*Portuguese*
 ![My Image](graphs_results/results_easy_EM_pt.png)
 
-Execution Accuracy results
-English
+**Execution Accuracy**
 
-Portuguese
+*English*
+![My Image](graphs_results/results_easy_EX.png)
 
+*Portuguese*
+![My Image](graphs_results/results_easy_EX_pt.png)
 
 #### Medium
 
