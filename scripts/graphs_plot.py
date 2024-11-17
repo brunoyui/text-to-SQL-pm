@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
-def plot_and_save_graph_results(data, data1, file, x_pos, x_positions, categories, ax_text_pos, ax1_text_pos, ay_ticks, ay_ticks1, hspace, legend_anchor, metric_label):
-    fig, (ax, ax1) = plt.subplots(2,1, figsize=(20, 8))
+def plot_and_save_graph_results(data, data1, file, categories, x_pos, x_positions, ax_text_pos, ax1_text_pos, ay_ticks, ay_ticks1, hspace, legend_anchor, fig_size, metric_label):
+    fig, (ax, ax1) = plt.subplots(2,1, figsize=fig_size)
     
     categories_qtd = len(categories)
     labels = ['GPT-3.5 Turbo - OpenAI Repr.', 'GPT-3.5 Turbo - Code Repr.', 
@@ -74,4 +74,4 @@ def plot_and_save_graph_results(data, data1, file, x_pos, x_positions, categorie
 
     plt.tight_layout()  # Adjust layout to prevent labels from overlapping
     plt.subplots_adjust(hspace)
-    plt.savefig(file, format='png')
+    plt.savefig(file, format='png', bbox_inches='tight')

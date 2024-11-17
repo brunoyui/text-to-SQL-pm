@@ -25,3 +25,5 @@ This repository includes the resources referenced in the paper, as well as compl
 ## Complementary content
 
 This section contains details of each SQL pattern template founded and the complete results of models evaluations using Exact Match Accuracy (EM) and Execution Accuracy (EX) metrics for both languages, English and Portuguese. 
+
+python3 main.py --lang=EN --metric=EM --sql_complexity=no_hardness --file=../graphs_results/results_no_hardness_EM.png

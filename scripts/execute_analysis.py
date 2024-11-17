@@ -1,6 +1,6 @@
 import pandas as pd
 from loader_results import LoaderResults
-from execution import ExecutionEasy
+from execution import ExecutionEasy, ExecutionMedium, ExecutionHard, ExecutionExtra, ExecutionNoHardness
 
 def get_models_to_load(lang, metric):
     models_to_load_shot0 = {
@@ -21,6 +21,20 @@ def get_models_to_load(lang, metric):
         'cr_llama3_shot1': {'lang': lang, 'representation': 'code_shot1', 'metric': metric}
     }
     return models_to_load_shot0, models_to_load_shot1
+
+def get_execution(sql_complexity: str):
+    if sql_complexity == "easy":
+        execution = ExecutionEasy()
+    elif sql_complexity == "medium":
+        execution = ExecutionMedium()
+    elif sql_complexity == "hard":
+        execution = ExecutionHard()
+    elif sql_complexity == "extra":
+        execution = ExecutionExtra()
+    elif sql_complexity == "no_hardness":
+        execution = ExecutionNoHardness()
+    
+    return execution
 
 def execute(lang, metric, sql_complexity, file, metric_label):
     path_ds = '../dataset/text2sql4pm.tsv'
@@ -56,5 +70,5 @@ def execute(lang, metric, sql_complexity, file, metric_label):
     shot0_results = pd.concat([filters_columns, shot0_df[columns_result_shot0]], axis=1)
     shot1_results = pd.concat([filters_columns, shot1_df[columns_result_shot1]], axis=1)
 
-    execution = ExecutionEasy()
-    execution.execute(shot0_results, shot1_results, file, metric_label)
+    execution = get_execution(sql_complexity)
+    execution.execute(shot0_results, shot1_results, file, metric_label, metric)
