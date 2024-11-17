@@ -41,9 +41,9 @@ This section contains details of each SQL pattern template founded and the compl
 #### Easy
 |  Symbol   |                                           SQL Pattern                                                       |
 |-----------|-------------------------------------------------------------------------------------------------------------|
-| Sc        | SELECT *concept* FROM event\_log (ORDER BY (*concept*<sup>+<sup>))<sup>*</sup>                              |
-| ScFc      | SELECT *concept* FROM event\_log WHERE (FILTER *concept*) (ORDER BY (*concept*<sup>+<sup>))<sup>*<sup>      | 
-| ScGFc<sup>+<sup>| SELECT *concept* FROM event\_log GROUP BY *concept* HAVING (FILTER *concept*)<sup>+<sup>              |
+| Sc        | SELECT *concept* FROM event\_log (ORDER BY *concept*<sup>+</sup>)<sup>*</sup>                              |
+| ScFc      | SELECT *concept* FROM event\_log WHERE (FILTER *concept*) (ORDER BY *concept*<sup>+</sup>)<sup>*</sup>      | 
+| ScGcFc<sup>+</sup>| SELECT *concept* FROM event\_log GROUP BY *concept* HAVING (FILTER *concept*)<sup>+</sup>              |
 | Ac        | SELECT AGG(*concept*) FROM event\_log                                                                       |           
 | AcFc      | SELECT AGG(*concept*) FROM event\_log (FILTER *concept*)                                                    |
 
@@ -66,13 +66,13 @@ This section contains details of each SQL pattern template founded and the compl
 #### Medium
 |  Symbol   |                                           SQL Pattern                                                       |
 |-----------|-------------------------------------------------------------------------------------------------------------|
-| Sc<sup>+<sup> | SELECT (*concept*<sup>+<sup>) from event\_log (ORDER BY *concept*)<sup>*<sup> |
+| Sc<sup>+</sup> | SELECT (*concept*<sup>+</sup>) from event\_log (ORDER BY *concept*)<sup>*</sup> |
 | ScGc  | SELECT *concept* FROM event\_log GROUP BY *concept* ORDER BY *concept* |
-| Sc<sup>+<sup>Fc<sup>+<sup>   | SELECT (*concept*<sup>+<sup>) FROM event\_log WHERE (FILTER *concept*)<sup>+<sup> (ORDER BY *concept*)<sup>*<sup> |
-| Sc<sup>+<sup>GcFc<sup>+<sup> |  SELECT (*concept*<sup>+<sup>) FROM event\_log GROUP BY (*concept*<sup>+<sup>) HAVING (FILTER *concept*) |
-| Acc<sup>+<sup>Gc | SELECT AGG(*concept*), (*concept*<sup>+<sup>) FROM event\_log GROUP BY *concept* |
-| Ac(c<sup>+<sup>)<sup>*<sup>Fc<sup>+<sup>(Gc)<sup>*<sup> | SELECT AGG(*concept*), (*concept*<sup>+<sup>)<sup>*<sup> FROM event\_log WHERE (FILTER *concept*)<sup>+<sup>(GROUP BY *concept*)<sup>*<sup> |
-| (Ac)<sup>+<sup>c(Fc)<sup>*<sup>GcFc | SELECT AGG(*concept*<sup>+<sup>), *concept* FROM event\_log (WHERE FILTER *concept*)<sup>*<sup> GROUP BY *concept* HAVING (FILTER *concept*) |
+| Sc<sup>+</sup>Fc<sup>+</sup>   | SELECT (*concept*<sup>+</sup>) FROM event\_log WHERE (FILTER *concept*)<sup>+</sup> (ORDER BY *concept*)<sup>*</sup> |
+| Sc<sup>+</sup>GcFc<sup>+</sup> |  SELECT (*concept*<sup>+</sup>) FROM event\_log GROUP BY (*concept*<sup>+</sup>) HAVING (FILTER *concept*) |
+| Acc<sup>+</sup>Gc | SELECT AGG(*concept*), (*concept*<sup>+</sup>) FROM event\_log GROUP BY *concept* |
+| Ac(c<sup>+</sup>)<sup>*</sup>Fc<sup>+</sup>(Gc)<sup>*</sup> | SELECT AGG(*concept*), (*concept*<sup>+</sup>)<sup>*</sup> FROM event\_log WHERE (FILTER *concept*)<sup>+</sup>(GROUP BY *concept*)<sup>*</sup> |
+| (Ac)<sup>+</sup>c(Fc)<sup>*</sup>GcFc | SELECT AGG(*concept*<sup>+</sup>), *concept* FROM event\_log (WHERE FILTER *concept*)<sup>*</sup> GROUP BY *concept* HAVING (FILTER *concept*) |
 
 **Exact Match Accuracy**
 
