@@ -150,7 +150,7 @@ class ExecutionExtra(Execution):
 
     def plot_configs(self):
         configs = {
-            "categories": ['ScFc$^+$(Gc)$^*$', 'ScFSc(Fc)$^*$(Gc)$^*$', 'Sc(Fc)$^*$GcFSc', 'Acc$^+$Fc$^*$Gc$^*$', 'AcFSc', 'AccGc(FSc)$^*$', 'SU'],
+            "categories": ['ScFc$^+$(Gc)$^*$', 'ScFSc(Fc)$^*$(Gc)$^*$', 'Sc(Fc)$^*$GcFSc', 'Acc$^+$Fc$^+$Gc$^+$', 'AcFSc', 'AccGc(FSc)$^*$', 'SU'],
             "x_pos": [0, 0.3, 0.6, 0.9, 1.2, 1.5,
                       2.3, 2.6, 2.9, 3.2, 3.5, 3.8,
                       4.6, 4.9, 5.2, 5.5, 5.8, 6.1,
