@@ -34,7 +34,130 @@ This repository includes the resources referenced in the paper, as well as compl
 
 ## Complete results
 
-This section contains details of each SQL pattern template founded and the complete results of models evaluations using Exact Match Accuracy (EM) and Execution Accuracy (EX) metrics for both languages, English and Portuguese.
+This section contains the complete results of models evaluations using Exact Match Accuracy (EM) and Execution Accuracy (EX) metrics for both languages, English and Portuguese and details of each SQL pattern template founded within each SQL complexity class. 
+
+### Metric Results - Exact Match Accuracy (EM) and Execution Accuracy (EX)
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th colspan="2">GPT-3.5 Turbo</th>
+    <th colspan="2">Gemini-1.0 Pro</th>
+    <th colspan="2">Llama3-8B Instruct</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>OPR</td>
+    <td>CR</td>
+    <td>OPR</td>
+    <td>CR</td>
+    <td>OPR</td>
+    <td>CR</td>
+  </tr>
+  <tr>
+    <td>EM</td>
+    <td>English</td>
+    <td>0-shot</td>
+    <td><b>25.50%</b></td>  
+    <td>14.68%</td>
+    <td>22.66%</td>
+    <td>5.20%</td>
+    <td>16.37%</td>
+    <td>13.78%</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>1-shot</td>
+    <td>37.16%</td>  
+    <td><b>40.12%</b></td>
+    <td>24.89%</td>
+    <td>28.04%</td>
+    <td><b>40.12%</b></td>
+    <td>24.95%</td>
+  </tr>
+   <tr>
+    <td></td>
+    <td>Portuguese</td>
+    <td>0-shot</td>
+    <td><b>24.77%</b></td>  
+    <td>16.92%</td>
+    <td>21.15%</td>
+    <td>5.38%</td>
+    <td>15.65%</td>
+    <td>11.90%</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>1-shot</td>
+    <td>36.01%</td>  
+    <td><b>38.01%</b></td>
+    <td>23.99%</td>
+    <td>27.67%</td>
+    <td><b>38.01%</b></td>
+    <td>19.03%</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>  
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>EX</td>
+    <td>English</td>
+    <td>0-shot</td>
+    <td><b>47.61%</b></td>  
+    <td>46.47%</td>
+    <td>39.70%</td>
+    <td>37.52%</td>
+    <td>36.13%</td>
+    <td>39.09%</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>1-shot</td>
+    <td>47.85%</td>  
+    <td><b>54.56%</b></td>
+    <td>38.67</td>
+    <td>47.73%</td>
+    <td>39.40%</td>
+    <td>47.79%</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Portuguese</td>
+    <td>0-shot</td>
+    <td>44.53%</td>  
+    <td><b>45.74%</b></td>
+    <td>37.16%</td>
+    <td>40.18%</td>
+    <td>35.77%</td>
+    <td>36.01%</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td>1-shot</td>
+    <td>47.79%</b></td>  
+    <td><b>52.63%</b></td>
+    <td>42.66%</td>
+    <td>49.49%</td>
+    <td>35.29%</td>
+    <td>43.50%</td>
+  </tr>
+</table>
 
 ### SQL patterns templates and results
 
