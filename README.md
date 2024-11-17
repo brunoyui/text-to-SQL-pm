@@ -91,12 +91,90 @@ This section contains details of each SQL pattern template founded and the compl
 ![My Image](graphs_results/results_medium_EX_pt.png)
 
 ### Hard
+|  Symbol   |                                           SQL Pattern                                                       |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+|  Sc<sup>+</sup>Fc<sup>+</sup>(Gc)<sup>*</sup> | SELECT (*concept*<sup>+</sup>) FROM event\_log WHERE (FILTER *concept*)<sup>+</sup> (GROUP BY concept)<sup>*</sup> (ORDER BY *concept*)<sup>*</sup> |
+|  ScFSc  | SELECT *concept* FROM event\_log WHERE (FILTER *concept* SUBSELECT) |
+|  ScFcGcFc  | SELECT *concept* FROM event\_log WHERE (FILTER *concept*) GROUP BY *concept HAVING (FILTER *concept*) |
+|  ScGcFSc  | SELECT *concept* FROM event\_log GROUP BY *concept* HAVING (FILTER *concept* SUBSELECT) |
+|  AcFSc  | SELECT AGG(*concept*) FROM event\_log WHERE (FILTER *concept* SUBSELECT) |
+|  AccFc<sup>+</sup>Gc  | SELECT AGG(*concept*), *concept* FROM event\_log WHERE (FILTER *concept*)<sup>+</sup> GROUP BY *concept* |
+|  SIE & (SELECT) (INTERSECT \| EXCEPT) (SELECT) ((INTERSECT \| EXCEPT) SELECT)<sup>*</sup> |
+
+**Exact Match Accuracy**
+
+*English*
+![My Image](graphs_results/results_hard_EM.png)
+
+*Portuguese*
+![My Image](graphs_results/results_hard_EM_pt.png)
+
+**Execution Accuracy**
+
+*English*
+![My Image](graphs_results/results_hard_EX.png)
+
+*Portuguese*
+![My Image](graphs_results/results_hard_EX_pt.png)
 
 ### Extra
+|  Symbol   |                                           SQL Pattern                                                       |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+|  ScFc<sup>+</sup>(Gc)<sup>*</sup> | SELECT (*concept*) FROM event\_log WHERE (FILTER *concept*)<sup>+</sup> (GROUP BY *concept*)<sup>*</sup> (ORDER BY *concept)<sup>*</sup> |
+|  ScFSc(Fc)<sup>*</sup>(Gc)<sup>*</sup> | SELECT *concept* FROM event\_log WHERE (FILTER *concept* SUBSELECT) (FILTER *concept*)<sup>*</sup> (GROUP BY *concept*)<sup>*</sup> (ORDER BY *concept*)<sup>*</sup> |
+|  Sc(Fc)<sup>*</sup>GcFSc | SELECT *concept* FROM event\_log WHERE (FILTER *concept*)<sup>*</sup> GROUP BY *concept* HAVING (FILTER *concept* SUBSELECT) (ORDER BY *concept*)<sup>*</sup> |
+|  Acc<sup>+</sup>Fc<sup>+</sup>Gc<sup>+</sup> | SELECT AGG(*concept*), *concept*<sup>+</sup> FROM event\_log WHERE (FILTER *concept*)<sup>+</sup> GROUP BY *concept*<sup>+</sup> |
+|  AcFSc | SELECT AGG(*concept*) FROM event\_log WHERE (FILTER *concept* SUBSELECT) |
+|  AccGc(FSc)<sup>*</sup> | SELECT AGG(*concept*), *concept* FROM event\_log GROUP BY *concept*<sup>+</sup> (HAVING FILTER *concept* SUBSELECT)<sup>*</sup> (ORDER BY *concept*)<sup>*</sup> |
+|  SU | (SELECT) (UNION) (SELECT) |
+
+**Exact Match Accuracy**
+
+*English*
+![My Image](graphs_results/results_extra_EM.png)
+
+*Portuguese*
+![My Image](graphs_results/results_extra_EM_pt.png)
+
+**Execution Accuracy**
+
+*English*
+![My Image](graphs_results/results_extra_EX.png)
+
+*Portuguese*
+![My Image](graphs_results/results_extra_EX_pt.png)
+
 
 ### No hardness
+|  Symbol   |                                           SQL Pattern                                                       |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+|  Sc<sup>+</sup>Fc<sup>+</sup>(Gc)<sup>*</sup> | SELECT (*concept*<sup>+</sup>) FROM event\_log (INNER JOIN event\_log)<sup>*</sup> WHERE (FILTER *concept*)<sup>+</sup> (GROUP BY *concept*<sup>+</sup>)<sup>*</sup> |
+|  Sc<sup>+</sup>Gc(Fc)<sup>*</sup> | SELECT (*concept*<sup>+</sup>) FROM event\_log GROUP BY *concept* (HAVING FILTER *concept*)<sup>*</sup> |
+|  Sc<sup>+</sup>(Fc)<sup>*</sup>FSc(Gc)<sup>*</sup> | SELECT (*concept*<sup>+</sup>) FROM event\_log WHERE (FILTER *concept*)<sup>*</sup> (FILTER *concept* SUBSELECT) (GROUP BY *concept*)<sup>*</sup> |
+|  Sc<sup>+</sup>RS(Fc)<sup>*</sup> | SELECT (*concept*<sup>+</sup>) FROM (event\_log | SUBSELECT) (JOIN SUBSELECT)<sup>*</sup> WHERE (FILTER *concept*)<sup>*</sup> (ORDER BY *concept*)<sup>*</sup> |
+|  Ac(c)<sup>*</sup>Fc<sup>+</sup>(Gc)<sup>*</sup> | SELECT AGG(*concept*), (*concept*)<sup>*</sup> FROM event\_log (INNER JOIN event\_log)<sup>*</sup> WHERE (FILTER *concept*)<sup>+</sup> (GROUP BY *concept*)<sup>*</sup> |
+|  AccFScGc | SELECT AGG(*concept*), *concept* FROM event\_log WHERE (FILTER *concept* SUBSELECT) (GROUP BY *concept*) |
+|  AccGc | SELECT AGG(*concept*), *concept* FROM event\_log GROUP BY *concept* |
+|  Ac(c)<sup>*</sup>RS(Fc)<sup>*</sup>(Gc)<sup>*</sup> | SELECT AGG(*concept*), (*concept*)<sup>*</sup> FROM (event\_log | SUBSELECT) (JOIN SUBSELECT)<sup>*</sup> WHERE (FILTER *concept*)<sup>*</sup> (GROUP BY *concept*)<sup>+</sup> |
+|  S(UE)<sup>+</sup> | SELECT ((UNION$\|EXCEPT) SELECT)<sup>+</sup> |
+|  WS | WITH (SUBSELECT)<sup>+</sup> SELECT | 
 
 
+**Exact Match Accuracy**
+
+*English*
+![My Image](graphs_results/results_no_hardness_EM.png)
+
+*Portuguese*
+![My Image](graphs_results/results_no_hardness_EM_pt.png)
+
+**Execution Accuracy**
+
+*English*
+![My Image](graphs_results/results_no_hardness_EX.png)
+
+*Portuguese*
+![My Image](graphs_results/results_no_hardness_EX_pt.png)
 
 
 
