@@ -36,7 +36,7 @@ This repository includes the resources referenced in the paper, as well as compl
 
 This section contains the complete results of models evaluations using Exact Match Accuracy (EM) and Execution Accuracy (EX) metrics for both languages, English and Portuguese and details of each SQL pattern template founded within each SQL complexity class. 
 
-### Metric Results - Exact Match Accuracy (EM) and Execution Accuracy (EX)
+### Metrics - Exact Match Accuracy (EM) and Execution Accuracy (EX)
 
 <table>
   <tr>
@@ -159,7 +159,7 @@ This section contains the complete results of models evaluations using Exact Mat
   </tr>
 </table>
 
-### SQL patterns templates and results
+### SQL patterns template
 
 ### Easy
 |  Symbol   |                                           SQL Pattern                                                       |
