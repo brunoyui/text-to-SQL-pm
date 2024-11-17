@@ -1,6 +1,6 @@
 # Applying Text-to-SQL in Process Mining: Leveraging Natural Language for Data Insights
 
-This repository includes the resources referenced in the paper, as well as complementary content. Bellow the details of each resource:
+This repository includes the resources referenced in the paper, as well as complete results for metrics Exact Match Accuracy (EM) and Execution Accuracty (EX) for Portuguese and English language. Bellow the details of each resource:
 
 - dataset: 
     - text2sql4pm.tsv: contains all data in tsv format file
@@ -26,13 +26,13 @@ This repository includes the resources referenced in the paper, as well as compl
     - main.py: the entry point for executing the results analysis based on the parameters provided
     - execute_analysis.py: the common pre-steps for executing results analysis for each SQL complexity
     - execution.py: steps and configurations necessary to process the results and generates the graphs for each SQL complexity
-    - graphs_plot.py: function to generate the graphs for the paper and complementary content
+    - graphs_plot.py: function to generate the graphs results
     - loader_results.py: contains the class used to support the load of files results for each prompt strategy (0-shot and 1-shot) and prompt representation
     - sql_pattern.py: contains filters for SQL patterns template founded in each SQL complexity 
     - utils.py: auxiliary function to calculate results percentage
     - run.sh: shell script to process all results
 
-## Complementary content
+## Complete results
 
 This section contains details of each SQL pattern template founded and the complete results of models evaluations using Exact Match Accuracy (EM) and Execution Accuracy (EX) metrics for both languages, English and Portuguese.
 
