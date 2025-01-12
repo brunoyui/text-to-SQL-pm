@@ -6,7 +6,7 @@ def plot_and_save_graph_results(data, data1, file, categories, x_pos, x_position
     categories_qtd = len(categories)
     labels = ['GPT-3.5 Turbo - OpenAI Repr.', 'GPT-3.5 Turbo - Code Repr.', 
               'Gemini-1.0 - OpenAI Repr.', 'Gemini-1.0 - Code Repr.',
-              'Llama3B 8B - OpenAI Repr.', 'Llama3B 8B - Code Repr.']
+              'Llama3-8B - OpenAI Repr.', 'Llama3-8B - Code Repr.']
 
     colors = ['#66BB6A', '#4CAF50',  # Vibrant Green, Medium Green
               '#FFA726', '#FF9800',  # Vibrant Orange, Medium Orange
