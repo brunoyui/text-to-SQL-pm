@@ -1,4 +1,4 @@
-from execute_analysis import execute
+from execute_analysis_by_model import execute
 import argparse
 
 if __name__ == "__main__":
@@ -15,4 +15,5 @@ if __name__ == "__main__":
     else:
         metric_label = 'Exact Match Acc. (%)'
 
-    execute(args.lang, args.metric, args.sql_complexity, args.file, metric_label)
+    #execute(args.lang, args.metric, args.sql_complexity, args.file, metric_label)
+    execute(args.sql_complexity, args.file)

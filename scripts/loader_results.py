@@ -7,13 +7,17 @@ class LoaderResults(object):
             'openai_shot0': '../results/english/openAI-representation_0-shot/evaluations/',
             'code_shot0': '../results/english/code-representation_0-shot/evaluations/',
             'openai_shot1': '../results/english/openAI-representation_1-shot/evaluations/',
-            'code_shot1': '../results/english/code-representation_1-shot/evaluations/'
+            'code_shot1': '../results/english/code-representation_1-shot/evaluations/',
+            'code_shot3': '../results/english/code-representation_3-shot/evaluations/',
+            'code_shot5': '../results/english/code-representation_5-shot/evaluations/'
         }
         self.representation_path_PT = {
             'openai_shot0': '../results/portuguese/openAI-representation_0-shot/evaluations/',
             'code_shot0': '../results/portuguese/code-representation_0-shot/evaluations/',
             'openai_shot1': '../results/portuguese/openAI-representation_1-shot/evaluations/',
-            'code_shot1': '../results/portuguese/code-representation_1-shot/evaluations/'
+            'code_shot1': '../results/portuguese/code-representation_1-shot/evaluations/',
+            'code_shot3': '../results/portuguese/code-representation_3-shot/evaluations/',
+            'code_shot5': '../results/portuguese/code-representation_5-shot/evaluations/'
         }
 
     def get_data_frame_results(self, path, model):
