@@ -6,7 +6,6 @@ def count_ok_em(df, columns):
 
 def calculate_percentages_counts(df, columns, metric):
   total = df.shape[0]
-  print(df)
   if metric == 'EX':
     total_ok = [count_ok(df, column) for column in columns]
   else:

@@ -20,7 +20,9 @@ def get_models_to_load(lang, metric):
     models_to_load_llama3 = {
         'opr_llama3_shot1': {'lang': lang, 'representation': 'openai_shot1', 'metric': metric},
         'cr_llama3': {'lang': lang, 'representation': 'code_shot0', 'metric': metric},
-        'cr_llama3_shot1': {'lang': lang, 'representation': 'code_shot1', 'metric': metric}
+        'cr_llama3_shot1': {'lang': lang, 'representation': 'code_shot1', 'metric': metric},
+        'cr_llama3_shot3': {'lang': lang, 'representation': 'code_shot3', 'metric': metric},
+        'cr_llama3_shot5': {'lang': lang, 'representation': 'code_shot5', 'metric': metric}
     }
 
     return models_to_load_gpt35, models_to_load_gemini10, models_to_load_llama3
