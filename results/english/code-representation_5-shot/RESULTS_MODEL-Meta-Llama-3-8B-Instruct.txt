@@ -1,0 +1,1655 @@
+select count(*), e1.idcase from event_log AS e1 inner join event_log AS e2 on e1.idcase = e2.idcase WHERE e2.activity = 'End trip' and e1.timestamp < e2.timestamp group by e1.idcase
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip';
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip';
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip'
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip';
+select count(*), e1.idcase from event_log AS e1 inner join event_log AS e2 on e1.idcase = e2.idcase WHERE e2.activity = 'End trip' and e1.timestamp < e2.timestamp group by e1.idcase
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip';
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip';
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip';
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip';
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip';
+SELECT count(*) FROM event_log WHERE activity = 'End trip' AND resource = 'James'
+SELECT count(*) FROM event_log WHERE activity = 'End trip' AND resource = 'James'
+SELECT count(*) FROM event_log WHERE activity = 'End trip' AND resource = 'James';
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip' AND resource = 'James'
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip' AND resource = 'James'
+SELECT count(*) FROM event_log WHERE activity = 'End trip' AND resource = 'James'
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip' AND resource = 'James'
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip' AND resource = 'James'
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip' AND resource = 'James'
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip' AND resource = 'James'
+SELECT count(*) FROM event_log WHERE activity = 'End trip' AND resource = 'James'
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) as frequency FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) as frequency FROM event_log GROUP BY resource
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT COUNT(*) AS total_activities, resource FROM event_log GROUP BY resource
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) AS total_actions, COUNT(DISTINCT activity) AS unique_actions FROM event_log GROUP BY resource ORDER BY total_actions DESC;
+SELECT COUNT(*) FROM event_log WHERE resource = 'Peter';
+SELECT COUNT(*) FROM event_log WHERE resource = 'Peter';
+SELECT COUNT(*) FROM event_log WHERE resource = 'Peter';
+SELECT count(*) FROM event_log WHERE resource = 'Peter'
+SELECT COUNT(*) FROM event_log WHERE resource = 'Peter';
+SELECT COUNT(*) FROM event_log WHERE resource = 'Peter';
+SELECT COUNT(*) FROM event_log WHERE resource = 'Peter'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND strftime('%Y-%m', timestamp) = '2018-03'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND strftime('%Y-%m', timestamp) = '2018-03'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND strftime('%Y-%m', timestamp) = '2018-03'
+SELECT idcase FROM event_log WHERE timestamp BETWEEN '2018-03-01' AND '2018-04-01'
+SELECT idcase FROM event_log GROUP BY idcase HAVING strftime('%Y-%m', MAX(timestamp)) = '2018-03';
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2018-03-01' AND '2018-03-31'
+SELECT idcase FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2018-03-01' AND '2018-03-31'
+SELECT DISTINCT idcase FROM event_log WHERE timestamp BETWEEN '2018-03-01' AND '2018-03-31' AND activity = 'End trip';
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas'
+SELECT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas'
+SELECT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas'
+SELECT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas'
+SELECT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas';
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas';
+SELECT * FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND resource!= 'Douglas';
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT (DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT idcase) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log;
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT idcase) AS num_cases FROM event_log;
+SELECT COUNT(DISTINCT resource) as total_employees FROM event_log
+SELECT COUNT (DISTINCT resource) FROM event_log
+SELECT resource, COUNT(*) AS total_events FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) AS total_events FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) AS total_events FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) as total_actions FROM event_log GROUP BY resource
+SELECT idcase FROM event_log WHERE cost > 2225 GROUP BY idcase
+SELECT DISTINCT idcase FROM event_log WHERE cost > 2225
+SELECT * FROM event_log WHERE cost > 2225
+SELECT idcase FROM event_log WHERE cost > 2225
+SELECT idcase FROM event_log GROUP BY idcase HAVING MAX(cost) > 2225
+SELECT resource, COUNT(*) as total_events FROM event_log GROUP BY resource ORDER BY total_events DESC LIMIT 1;
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource HAVING COUNT(*) = (SELECT COUNT(*) FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 1)
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource HAVING COUNT(*) = (SELECT COUNT(*) FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 1)
+SELECT resource FROM event_log GROUP BY resource HAVING COUNT(*) = (SELECT COUNT(*) FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 1)
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource HAVING COUNT(*) = (SELECT COUNT(*) FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 1)
+SELECT resource, COUNT(*) as total_time FROM event_log WHERE activity LIKE '%processing%' OR activity LIKE '%handling%' GROUP BY resource ORDER BY total_time DESC;
+SELECT resource, COUNT(*) as total_events FROM event_log GROUP BY resource ORDER BY total_events DESC LIMIT 1;
+SELECT resource, COUNT(*) as total_events FROM event_log GROUP BY resource ORDER BY total_events DESC LIMIT 1;
+SELECT resource, COUNT(*) as num_events FROM event_log GROUP BY resource ORDER BY num_events DESC LIMIT 1;
+SELECT resource, COUNT(*) as total_events FROM event_log GROUP BY resource ORDER BY total_events DESC;
+SELECT resource, COUNT(*) as total_events FROM event_log GROUP BY resource ORDER BY total_events DESC LIMIT 1;
+SELECT resource, COUNT(*) as total_events FROM event_log GROUP BY resource ORDER BY total_events DESC LIMIT 1;
+SELECT resource, COUNT(*) as event_count FROM event_log GROUP BY resource ORDER BY event_count DESC LIMIT 1;
+SELECT resource, COUNT(*) as total_actions FROM event_log GROUP BY resource ORDER BY total_actions DESC LIMIT 1;
+SELECT resource, COUNT(*) AS event_count FROM event_log GROUP BY resource ORDER BY event_count DESC;
+SELECT resource, COUNT(*) AS num_events FROM event_log GROUP BY resource ORDER BY num_events DESC;
+SELECT resource, COUNT(*) AS num_events FROM event_log GROUP BY resource ORDER BY num_events DESC;
+SELECT resource, COUNT(*) AS num_events FROM event_log GROUP BY resource ORDER BY num_events DESC;
+SELECT resource, COUNT(*) AS num_performances FROM event_log GROUP BY resource ORDER BY num_performances DESC;
+SELECT resource, COUNT(*) as total_declarations FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC;
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT * FROM event_log WHERE cost IS NOT NULL
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT * FROM event_log WHERE cost!= 0;
+SELECT * FROM event_log WHERE cost IS NOT NULL
+SELECT * FROM event_log WHERE cost IS NOT NULL
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT * FROM event_log WHERE cost IS NOT NULL
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT * FROM event_log WHERE activity = 'Start trip' OR activity = 'Request payment'
+SELECT * FROM event_log WHERE activity = 'Start trip' OR activity = 'Request payment'
+SELECT * FROM event_log WHERE activity ='start trip' OR activity ='request payment'
+SELECT * FROM event_log WHERE activity IN ('start trip','request payment');
+SELECT DISTINCT idcase FROM event_log WHERE (activity = 'Start trip' OR activity = 'End trip') AND idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment' INTERSECT SELECT idcase FROM event_log WHERE activity = 'Payment handled');
+SELECT activity, COUNT(*) as frequency FROM event_log GROUP BY activity ORDER BY frequency DESC;
+SELECT activity, COUNT(*) as frequency FROM event_log GROUP BY activity ORDER BY frequency DESC LIMIT 10;
+SELECT activity FROM event_log GROUP BY activity ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT activity from event_log GROUP BY activity HAVING COUNT(*) = (SELECT COUNT(*) FROM event_log GROUP BY activity ORDER BY COUNT(*) desc LIMIT 1)
+SELECT activity, COUNT(*) as count FROM event_log GROUP BY activity ORDER BY count DESC LIMIT 1;
+SELECT activity, COUNT(*) as frequency FROM event_log GROUP BY activity ORDER BY frequency DESC;
+SELECT activity, COUNT(*) as frequency FROM event_log GROUP BY activity ORDER BY frequency DESC;
+SELECT activity, COUNT(*) AS frequency FROM event_log GROUP BY activity ORDER BY frequency DESC;
+SELECT activity, COUNT(*) as frequency FROM event_log GROUP BY activity ORDER BY frequency DESC;
+SELECT * FROM event_log WHERE strftime('%Y', timestamp) = '2017';
+SELECT * FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-12-31';
+SELECT * FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-12-31';
+SELECT * FROM event_log WHERE EXTRACT(YEAR FROM timestamp) = 2017
+SELECT * FROM event_log WHERE strftime('%Y', timestamp) = '2017';
+SELECT DISTINCT activity FROM event_log WHERE strftime('%Y', timestamp) = '2017';
+SELECT * FROM event_log WHERE strftime('%Y', timestamp) = '2017';
+SELECT DISTINCT activity FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-12-31';
+SELECT DISTINCT activity FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-12-31'
+SELECT * FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-12-31'
+SELECT * FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-12-31' AND idcase IS NOT NULL
+SELECT * FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2018-01-01' ORDER BY timestamp, resource;
+SELECT * FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2018-01-01' AND idcase LIKE 'declaration %';
+SELECT activity, COUNT(*) as count FROM event_log WHERE strftime('%Y', timestamp) = '2017' GROUP BY activity ORDER BY count DESC;
+SELECT activity, COUNT(*) as count FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-12-31' GROUP BY activity ORDER BY count DESC;
+SELECT idcase FROM event_log GROUP BY idcase HAVING count(*) <= 20
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) <= 20;
+SELECT idcase FROM event_log group by idcase having count(*) <= 20
+SELECT idcase FROM event_log WHERE idcase LIKE '%declaration%' GROUP BY idcase HAVING COUNT(*) <= 20
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) <= 20
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) <= 20
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) <= 20
+SELECT resource, COUNT(DISTINCT idcase) as num_cases FROM event_log GROUP BY resource ORDER BY num_cases DESC LIMIT 5;
+SELECT resource, COUNT(DISTINCT idcase) as num_cases FROM event_log GROUP BY resource ORDER BY num_cases DESC LIMIT 5;
+SELECT resource, COUNT(DISTINCT idcase) as num_cases FROM event_log GROUP BY resource ORDER BY num_cases DESC LIMIT 5;
+SELECT resource, COUNT(DISTINCT idcase) as num_cases FROM event_log GROUP BY resource ORDER BY num_cases DESC LIMIT 5;
+SELECT resource, COUNT(*) as num_declarations FROM event_log GROUP BY resource ORDER BY num_declarations DESC LIMIT 5;
+SELECT resource, COUNT(*) as event_count FROM event_log GROUP BY resource ORDER BY event_count DESC LIMIT 5;
+SELECT resource FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 5;
+SELECT resource, COUNT(*) as event_count FROM event_log GROUP BY resource ORDER BY event_count DESC LIMIT 5;
+SELECT resource, COUNT(*) as event_count FROM event_log GROUP BY resource ORDER BY event_count DESC LIMIT 5;
+SELECT resource FROM event_log GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 5;
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity = 'Start trip' AND strftime('%Y', timestamp) = '2016' GROUP BY resource
+SELECT resource, COUNT(*) AS count_start_trip FROM event_log WHERE activity = 'Start trip' AND strftime('%Y', timestamp) = '2016' GROUP BY resource
+SELECT resource, COUNT(*) AS num_performances FROM event_log WHERE activity = 'Start trip' AND strftime('%Y', timestamp) = '2016' GROUP BY resource
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity ='start trip' AND EXTRACT(YEAR FROM timestamp) = 2016 GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity ='start trip' AND EXTRACT(YEAR FROM timestamp) = 2016 GROUP BY resource
+SELECT resource, COUNT(*) AS count FROM event_log WHERE activity ='start trip' AND strftime('%Y', timestamp) = '2016' GROUP BY resource
+SELECT resource, COUNT(*) AS total_occurrences FROM event_log WHERE activity = 'Start trip' AND strftime('%Y', timestamp) = '2016' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'Start trip' AND timestamp >= '2016-01-01' AND timestamp < '2017-01-01' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Start trip' AND timestamp >= '2016-01-01' AND timestamp < '2017-01-01' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(DISTINCT id), resource FROM event_log WHERE activity = 'declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(DISTINCT id), resource FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity = 'declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 20;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 20
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 20
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 20
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 20
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 20
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 20
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 20
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 20
+SELECT idcase from event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 10;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(activity) IN (SELECT Count(activity) FROM event_log GROUP BY idcase ORDER BY Count(activity) Desc LIMIT 10) order by COUNT(activity) DESC
+SELECT idcase FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT idcase, COUNT(DISTINCT activity) as num_activities FROM event_log GROUP BY idcase ORDER BY num_activities DESC LIMIT 1;
+SELECT idcase FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 5;
+SELECT idcase, COUNT(*) as num_activities, MAX(strftime('%s', timestamp)) - MIN(strftime('%s', timestamp)) as duration FROM event_log GROUP BY idcase ORDER BY num_activities DESC LIMIT 5;
+SELECT idcase FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 10;
+SELECT DISTINCT idcase FROM event_log WHERE resource = 'Sara' AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' )
+SELECT DISTINCT idcase FROM event_log WHERE resource = 'Sara' AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' )
+SELECT DISTINCT idcase FROM event_log WHERE resource = 'Sara' AND idcase NOT IN (SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment')
+SELECT DISTINCT idcase FROM event_log WHERE resource = 'Sara' AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' )
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment') AND resource = 'Sara'
+SELECT idcase FROM event_log WHERE resource = 'Sara' AND activity = 'Start trip' OR activity = 'End trip' AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' ) ORDER BY idcase;
+SELECT * FROM event_log WHERE timestamp BETWEEN '2017-01-10' AND '2017-02-01' AND idcase = 'declaration 143598';
+SELECT * FROM event_log WHERE idcase = 'declaration 143598' AND timestamp BETWEEN '2017-01-10' AND '2017-02-01'
+SELECT * FROM event_log WHERE idcase = 'declaration 143598' AND timestamp BETWEEN '2017-01-10' AND '2017-02-01'
+SELECT * FROM event_log WHERE timestamp BETWEEN '2017-01-10' AND '2017-02-01' AND idcase = 'declaration 143598';
+SELECT * FROM event_log WHERE timestamp BETWEEN '2017-01-10' AND '2017-02-01' AND idcase = '143598'
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp between '2017-01-01' and '2017-05-31' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp between '2017-01-01' and '2017-05-31' GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) as num_cases FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-05-31' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-05-31' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp between '2017-01-01' and '2017-05-31' GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) as num_cases FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-05-31' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-05-31' GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-05-31' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-05-31' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-05-31' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-05-31' GROUP BY resource
+SELECT idcase, COUNT(*) as total_activities FROM event_log GROUP BY idcase ORDER BY total_activities DESC LIMIT 10;
+SELECT idcase FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 10;
+SELECT idcase, COUNT(*) as num_activities FROM event_log GROUP BY idcase ORDER BY num_activities DESC LIMIT 10;
+SELECT idcase, COUNT(*) as num_activities FROM event_log GROUP BY idcase ORDER BY num_activities DESC LIMIT 10;
+SELECT idcase, COUNT(*) as num_activities FROM event_log GROUP BY idcase ORDER BY num_activities DESC LIMIT 10;
+SELECT idcase FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 10;
+SELECT idcase, COUNT(*) as activity_count FROM event_log GROUP BY idcase ORDER BY activity_count DESC LIMIT 10;
+SELECT idcase, COUNT(*) as count FROM event_log GROUP BY idcase ORDER BY count DESC LIMIT 10;
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)), idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN ( SELECT COUNT(*) FROM event_log GROUP BY idcase HAVING COUNT(*) >= 20 ORDER BY COUNT(*) DESC LIMIT 5 ) ) GROUP BY idcase;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN (SELECT COUNT(*) FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 10) ORDER BY idcase DESC;
+SELECT idcase FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 10;
+SELECT idcase FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 10;
+SELECT idcase, COUNT(*) as event_count FROM event_log GROUP BY idcase ORDER BY event_count DESC LIMIT 10;
+SELECT idcase, COUNT(*) as num_events FROM event_log GROUP BY idcase ORDER BY num_events DESC LIMIT 10;
+SELECT idcase, COUNT(*) as num_events FROM event_log GROUP BY idcase ORDER BY num_events DESC LIMIT 10;
+SELECT idcase, COUNT(*) as num_events FROM event_log GROUP BY idcase ORDER BY num_events DESC LIMIT 10;
+SELECT idcase, COUNT(*) as num_events FROM event_log GROUP BY idcase ORDER BY num_events DESC LIMIT 10;
+SELECT idcase FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 10;
+SELECT idcase, SUM(cost) AS total_cost FROM event_log GROUP BY idcase;
+SELECT COUNT(DISTINCT resource), SUM(cost), idcase FROM event_log GROUP BY idcase;
+SELECT COUNT(DISTINCT resource), SUM(cost), idcase FROM event_log GROUP BY idcase;
+SELECT idcase, SUM(cost) AS total_cost FROM event_log GROUP BY idcase;
+SELECT idcase, SUM(cost) AS total_cost FROM event_log GROUP BY idcase
+SELECT idcase, SUM(cost) as total_cost FROM event_log GROUP BY idcase
+SELECT SUM(cost) as total_cost, idcase FROM event_log GROUP BY idcase
+SELECT idcase, SUM(cost) as total_cost FROM event_log GROUP BY idcase
+SELECT idcase, SUM(cost) as total_cost FROM event_log GROUP BY idcase
+SELECT resource, COUNT(*) AS num_events FROM event_log GROUP BY resource HAVING COUNT(*) >= 100 ORDER BY num_events DESC;
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource HAVING COUNT(*) >= 100 ORDER BY COUNT(*) DESC;
+SELECT resource, COUNT(*) AS num_actions FROM event_log GROUP BY resource HAVING COUNT(*) >= 100 ORDER BY num_actions DESC;
+SELECT idcase, activity, timestamp FROM event_log ORDER BY idcase, MIN(timestamp)
+SELECT idcase, activity, timestamp FROM event_log ORDER BY idcase, MIN(timestamp)
+SELECT idcase, timestamp FROM event_log ORDER BY idcase, timestamp;
+SELECT idcase, MIN(timestamp) as start_date, activity FROM event_log GROUP BY idcase ORDER BY idcase, start_date;
+SELECT idcase, MIN(timestamp) AS start_date, activity FROM event_log GROUP BY idcase ORDER BY idcase, start_date;
+SELECT idcase, timestamp, activity, cost FROM event_log ORDER BY idcase, timestamp;
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource
+SELECT resource, COUNT(*) AS total_count FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource
+SELECT count(*), resource FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource;
+SELECT count(*), resource FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource
+SELECT activity, COUNT(*) AS count FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2017-01-01' AND '2018-01-01' GROUP BY activity
+SELECT activity, COUNT(*) FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2017-01-01' AND '2018-01-01' GROUP BY activity ORDER BY COUNT(*) DESC
+SELECT activity, COUNT(*) AS occurrences FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2017-01-01' AND '2018-01-01' GROUP BY activity ORDER BY occurrences DESC;
+SELECT activity, COUNT(*) AS frequency FROM event_log WHERE timestamp BETWEEN '2017-01-01' AND '2017-12-31' AND resource = 'Thomas' GROUP BY activity ORDER BY frequency DESC;
+SELECT COUNT(*) FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2017-01-01' AND '2017-12-31';
+SELECT COUNT(*) FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2017-01-01' AND '2017-12-31';
+SELECT COUNT(*) FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2017-01-01' AND '2017-12-31';
+SELECT COUNT(*) FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2017-01-01' AND '2018-01-01';
+SELECT COUNT(*) FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2017-01-01' AND '2017-12-31';
+SELECT COUNT(*) FROM event_log WHERE resource = 'Thomas' AND activity = 'Declaration submitted by employee' AND timestamp >= '2017-01-01' AND timestamp < '2018-01-01'
+SELECT activity, MAX(timestamp) AS most_recent_date FROM event_log GROUP BY activity
+SELECT activity, MAX(timestamp) AS most_recent_date FROM event_log GROUP BY activity;
+SELECT activity, MAX(timestamp) AS latest_timestamp FROM event_log GROUP BY activity ORDER BY activity;
+SELECT activity, MAX(timestamp) as last_performance FROM event_log GROUP BY activity
+SELECT activity, MAX(timestamp) as latest_timestamp FROM event_log GROUP BY activity
+SELECT activity, MAX(timestamp) AS last_occurrence FROM event_log GROUP BY activity
+SELECT activity, MAX(timestamp) AS most_recent_date FROM event_log GROUP BY activity
+SELECT activity, MAX(timestamp) AS last_timestamp FROM event_log GROUP BY activity
+SELECT COUNT(*) FROM event_log WHERE (activity = 'declaration approved by supervisor' AND timestamp LIKE '2017%') OR (activity = 'permit rejected by employee' AND timestamp LIKE '2018%')
+SELECT SUM(CASE WHEN activity = 'Declaration approved by supervisor' AND EXTRACT(YEAR FROM timestamp) = 2017 THEN 1 ELSE 0 END) AS declaration_approved_2017, SUM(CASE WHEN activity = 'Permit rejected by employee' AND EXTRACT(YEAR FROM timestamp) = 2018 THEN 1 ELSE 0 END) AS permit_rejected_2018 FROM event_log;
+SELECT COUNT(CASE WHEN activity = 'declaration approved by supervisor' AND EXTRACT(YEAR FROM timestamp) = 2017 THEN 1 ELSE NULL END) AS declaration_approved_by_supervisor_2017, COUNT(CASE WHEN activity = 'permit rejected by employee' AND EXTRACT(YEAR FROM timestamp) = 2018 THEN 1 ELSE NULL END) AS permit_rejected_by_employee_2018 FROM event_log
+SELECT SUM(CASE WHEN activity = 'declaration approved by supervisor' AND timestamp LIKE '2017%' THEN 1 ELSE 0 END) AS declaration_approved_in_2017, SUM(CASE WHEN activity = 'permit rejected by employee' AND timestamp LIKE '2018%' THEN 1 ELSE 0 END) AS permit_rejected_in_2018 FROM event_log
+SELECT CASE WHEN activity = 'declaration approved by supervisor' AND EXTRACT(YEAR FROM timestamp) = 2017 THEN COUNT(*) WHEN activity = 'permit rejected by employee' AND EXTRACT(YEAR FROM timestamp) = 2018 THEN COUNT(*) END AS count FROM event_log GROUP BY CASE WHEN activity = 'declaration approved by supervisor' AND EXTRACT(YEAR FROM timestamp) = 2017 THEN 'declaration approved by supervisor in 2017' WHEN activity = 'permit rejected by employee' AND EXTRACT(YEAR FROM timestamp) = 2018 THEN 'permit rejected by employee in 2018' END;
+SELECT COUNT(CASE WHEN activity = 'Declaration approved by supervisor' AND timestamp LIKE '2017%' THEN 1 ELSE NULL END) AS supervisor_approvals_2017, COUNT(CASE WHEN activity = 'Permit rejected by employee' AND timestamp LIKE '2018%' THEN 1 ELSE NULL END) AS permit_rejections_2018 FROM event_log
+SELECT activity, MAX(timestamp) AS "performance_end_date", idcase FROM event_log GROUP BY activity, idcase ORDER BY MAX(timestamp) DESC;
+SELECT activity, MAX(timestamp) as end_date, id FROM event_log GROUP BY activity, id ORDER BY end_date;
+SELECT activity, MAX(timestamp) AS end_date, id FROM event_log WHERE activity LIKE '%declaration%' GROUP BY activity, id ORDER BY end_date;
+SELECT COUNT(*) FROM event_log WHERE resource = 'Thomas' AND activity = 'Declaration submitted by employee'
+SELECT COUNT(*) FROM event_log WHERE activity = 'declaration submitted by employee' AND resource = 'Thomas'
+SELECT count(*) FROM event_log WHERE activity = 'Declaration submitted by employee' AND resource = 'Thomas'
+SELECT COUNT(*) FROM event_log WHERE activity = 'Declaration submitted by employee' AND resource = 'Thomas';
+SELECT COUNT(*) FROM event_log WHERE resource = 'Thomas' AND activity = 'Declaration submitted by employee' Note: The last one assumes that the resource name is 'Thomas', if it's not, you need to replace it with the actual resource name.
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE resource = 'Thomas'
+SELECT COUNT(*) FROM event_log WHERE resource = 'Diana' AND cost IS NOT NULL;
+SELECT COUNT(*) FROM event_log WHERE resource = 'Diana' AND cost IS NOT NULL;
+SELECT COUNT(*) FROM event_log WHERE resource = 'Diana' AND cost IS NOT NULL;
+SELECT * FROM event_log WHERE resource = 'Diana' AND cost IS NOT NULL;
+SELECT activity, count(*) FROM event_log WHERE resource = 'Diana' AND cost IS NOT NULL GROUP BY activity
+SELECT activity, count(*) FROM event_log WHERE resource = 'Diana' AND cost IS NOT NULL GROUP BY activity
+SELECT activity FROM event_log WHERE resource = 'Diana' AND cost IS NOT NULL
+SELECT COUNT(DISTINCT resource) FROM event_log GROUP BY idcase HAVING COUNT(*) > 3;
+SELECT COUNT(DISTINCT resource) FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3 )
+SELECT COUNT(DISTINCT resource) FROM event_log GROUP BY idcase HAVING COUNT(*) > 3
+SELECT COUNT(DISTINCT resource) as num_resources FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3 )
+SELECT COUNT(DISTINCT resource) FROM event_log WHERE idcase IS NOT NULL GROUP BY idcase HAVING COUNT(DISTINCT activity) > 3;
+SELECT DISTINCT resource FROM event_log WHERE activity = 'Declaration rejected by pre-approver'
+SELECT DISTINCT resource FROM event_log WHERE activity = 'Declaration rejected by pre-approver'
+SELECT DISTINCT resource FROM event_log WHERE activity = 'Declaration rejected by pre-approver';
+SELECT DISTINCT resource FROM event_log WHERE activity = 'Declaration rejected by pre-approver'
+SELECT DISTINCT resource FROM event_log WHERE activity = 'Declaration rejected by pre-approver'
+SELECT DISTINCT resource FROM event_log WHERE activity = 'Declaration rejected by pre-approver'
+SELECT DISTINCT resource FROM event_log WHERE activity = 'Declaration rejected by pre-approver'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Declaration final approved by director' AND EXTRACT(MONTH FROM timestamp) BETWEEN 1 AND 5 AND EXTRACT(YEAR FROM timestamp) = 2017;
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Declaration final approved by director' AND timestamp BETWEEN '2017-01-01' AND '2017-05-31';
+SELECT COUNT(DISTINCT e.idcase) FROM event_log e WHERE e.activity = 'Declaration final approved by director' AND e.timestamp BETWEEN '2017-01-01 00:00:00' AND '2017-05-31 23:59:59';
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Declaration final approved by director' AND timestamp BETWEEN '2017-01-01' AND '2017-05-31';
+SELECT idcase FROM event_log WHERE resource = 'Charles' AND strftime('%Y-%m', timestamp)!= '2018-01'
+SELECT idcase FROM event_log WHERE resource = 'Charles' AND idcase NOT IN ( SELECT idcase FROM event_log WHERE strftime('%Y-%m', timestamp) = '2018-01' )
+SELECT idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log WHERE strftime('%Y-%m', timestamp)!= '2018-01' GROUP BY idcase ) AND resource = 'Charles'
+SELECT DISTINCT idcase FROM event_log WHERE resource = 'Charles' AND timestamp NOT BETWEEN '2018-01-01' AND '2018-01-31'
+SELECT DISTINCT idcase FROM event_log WHERE resource = 'Charles' AND timestamp NOT BETWEEN '2018-01-01' AND '2018-01-31'
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 3
+SELECT COUNT(DISTINCT idcase), activity FROM event_log GROUP BY activity
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 3
+SELECT COUNT(DISTINCT idcase), activity FROM event_log GROUP BY activity
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3
+SELECT idcase from event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 3
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS duration, idcase FROM event_log GROUP BY idcase
+SELECT idcase, SUM((strftime('%s', next_timestamp) - strftime('%s', timestamp))) as total_time FROM ( SELECT id, activity, timestamp, LEAD(timestamp) OVER (PARTITION BY idcase ORDER BY timestamp) AS next_timestamp, idcase FROM event_log ) AS RankedEvents WHERE next_timestamp IS NOT NULL GROUP BY idcase
+SELECT idcase, strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS duration FROM event_log GROUP BY idcase
+WITH RankedEvents AS ( SELECT idcase, MIN(timestamp) AS start_time, MAX(timestamp) AS end_time FROM event_log GROUP BY idcase ), DurationCases AS ( SELECT idcase, (strftime('%s', end_time) - strftime('%s', start_time)) AS duration FROM RankedEvents ) SELECT idcase, AVG(duration) AS average_duration FROM DurationCases GROUP BY idcase
+SELECT idcase, strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS duration FROM event_log GROUP BY idcase
+WITH RankedEvents AS ( SELECT id, activity, timestamp, LEAD(timestamp) OVER (PARTITION BY idcase ORDER BY timestamp) AS next_timestamp, idcase FROM event_log ), DurationEvents AS ( SELECT idcase, (strftime('%s', next_timestamp) - strftime('%s', timestamp)) as duration FROM RankedEvents WHERE next_timestamp IS NOT NULL ) SELECT idcase, AVG(duration) AS average_duration FROM DurationEvents GROUP BY idcase
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT activity) = (SELECT COUNT(DISTINCT activity) FROM event_log WHERE idcase = event_log.idcase)
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT activity) = 1;
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT activity) = (SELECT COUNT(*) FROM event_log WHERE idcase = event_log.idcase)
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT activity) = (SELECT COUNT(*) FROM event_log WHERE idcase = event_log.idcase)
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT activity) = 1
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT activity) = (SELECT COUNT(*) FROM event_log WHERE idcase = event_log.idcase)
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT activity) = (SELECT COUNT(*) FROM event_log WHERE idcase = event_log.idcase)
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT activity) = (SELECT COUNT(*) FROM event_log WHERE idcase = event_log.idcase)
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT activity) = (SELECT COUNT(*) FROM event_log WHERE idcase = event_log.idcase)
+SELECT idcase, resource FROM ( SELECT idcase, resource, COUNT(*) AS employee_count FROM event_log GROUP BY idcase, resource ) AS subquery WHERE employee_count = 1
+SELECT idcase FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2016-01-01' AND '2017-12-31'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2016-01-01' AND '2017-12-31';
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2016-01-01' AND '2017-12-31'
+SELECT idcase FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2016-01-01' AND '2017-12-31'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2016-01-01' AND '2017-12-31'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2016-01-01' AND '2017-12-31';
+SELECT idcase FROM event_log WHERE activity = 'End trip' AND strftime('%Y', timestamp) BETWEEN '2016' AND '2017'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND strftime('%Y', timestamp) BETWEEN '2016' AND '2017'
+SELECT idcase FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2016-01-01' AND '2017-12-31'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND strftime('%Y', timestamp) BETWEEN '2016' AND '2017'
+SELECT idcase, timestamp FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2016-01-01 00:00:00' AND '2017-12-31 23:59:59' ORDER BY timestamp;
+SELECT * FROM event_log WHERE activity LIKE '%rejected%';
+SELECT * FROM event_log WHERE activity LIKE '%rejected%';
+SELECT * FROM event_log WHERE activity LIKE '%rejected%';
+SELECT * FROM event_log WHERE activity LIKE '%rejected%'
+SELECT * FROM event_log WHERE activity LIKE '%rejected%';
+SELECT * FROM event_log WHERE activity LIKE '%rejected%'
+SELECT * FROM event_log WHERE activity LIKE '%rejected%'
+SELECT activity, COUNT(*) as count_of_rejections, idcase FROM event_log WHERE activity LIKE '%rejected%' GROUP BY activity, idcase ORDER BY activity, idcase;
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase HAVING MAX(cost) > 0
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase;
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase;
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase ORDER BY max_cost DESC;
+SELECT idcase, MIN(cost) AS min_cost, MAX(cost) AS max_cost FROM event_log WHERE cost > 0 GROUP BY idcase
+SELECT p.idcase, strftime('%s', p.timestamp) - strftime('%s', e.start_time) as 'Time', f.activity FROM event_log p INNER JOIN (SELECT MIN(timestamp) as start_time, idcase FROM event_log GROUP BY idcase) e ON e.idcase = p.idcase LEFT JOIN event_log x ON x.idcase = e.idcase AND x.activity = 'Declaration rejected by employee' LEFT JOIN event_log y ON y.idcase = e.idcase AND y.activity = 'Payment handled' INNER JOIN (SELECT MAX(timestamp) as end_time, activity, idcase FROM event_log WHERE activity='End trip' OR activity='Declaration rejected by employee' OR activity='Payment handled' GROUP BY idcase) f ON f.idcase = e.idcase WHERE p.timestamp <= f.end_time ORDER BY p.idcase, 'Time';
+SELECT el.idcase, TIMESTAMPDIFF(SECOND, el.start_time, el.end_time) AS 'Time taken', el.end_activity FROM ( SELECT idcase, MIN(timestamp) AS start_time, MAX(CASE WHEN activity IN ('End trip', 'Declaration rejected by employee', 'Payment handled') THEN timestamp ELSE NULL END) AS end_time, MAX(CASE WHEN activity IN ('End trip', 'Declaration rejected by employee', 'Payment handled') THEN activity ELSE NULL END) AS end_activity FROM event_log GROUP BY idcase ) AS el ORDER BY el.idcase;
+SELECT p.idcase, strftime('%s', p.timestamp) - strftime('%s', e.start_time) as 'Elapsed Time' FROM event_log p INNER JOIN (SELECT MIN(timestamp) as start_time, idcase FROM event_log GROUP BY idcase) e ON e.idcase = p.idcase LEFT JOIN event_log x ON x.idcase = e.idcase AND x.activity = 'Declaration rejected by employee' LEFT JOIN event_log y ON y.idcase = e.idcase AND y.activity = 'Payment handled' LEFT JOIN (SELECT MAX(timestamp) as end_time, activity, idcase FROM event_log WHERE activity='End trip' OR activity='Declaration rejected by employee' OR activity='Payment handled' GROUP BY idcase) f ON f.idcase = e.idcase WHERE p.timestamp <= f.end_time ORDER BY p.idcase;
+SELECT p.idcase, strftime('%s', p.timestamp) - strftime('%s', e.start_time) as 'End trip', strftime('%s', x.timestamp) - strftime('%s', e.start_time) as 'Declaration rejected by employee', strftime('%s', y.timestamp) - strftime('%s', e.start_time) as 'Payment handled', f.activity FROM event_log p INNER JOIN (SELECT MIN(timestamp) as start_time, idcase FROM event_log GROUP by idcase) e ON e.idcase = p.idcase AND p.activity = 'End trip' LEFT JOIN event_log x ON x.idcase=e.idcase AND x.activity = 'Declaration rejected by employee' LEFT JOIN event_log y ON y.idcase=e.idcase AND y.activity = 'Payment handled' INNER JOIN (SELECT MAX(timestamp) as end_time, activity, idcase FROM event_log WHERE activity='End trip' or activity= 'Declaration rejected by employee' or activity='Payment handled' GROUP by idcase) f ON f.idcase=e.idcase
+SELECT p.idcase, strftime('%s', p.timestamp) - strftime('%s', e.start_time) as 'End trip', strftime('%s', x.timestamp) - strftime('%s', e.start_time) as 'Declaration rejected by employee', strftime('%s', y.timestamp) - strftime('%s', e.start_time) as 'Payment handled', f.activity FROM event_log p INNER JOIN (SELECT MIN(timestamp) as start_time, idcase FROM event_log GROUP by idcase) e ON e.idcase = p.idcase LEFT JOIN event_log x ON x.idcase = e.idcase AND x.activity = 'Declaration rejected by employee' LEFT JOIN event_log y ON y.idcase = e.idcase AND y.activity = 'Payment handled' INNER JOIN (SELECT MAX(timestamp) as end_time, activity, idcase FROM event_log WHERE activity='End trip' OR activity= 'Declaration rejected by employee' OR activity='Payment handled' GROUP by idcase) f ON f.idcase = e.idcase
+SELECT p.idcase, (strftime('%s', p.timestamp) - strftime('%s', e.start_time)) as 'Time to End Trip', (strftime('%s', COALESCE(x.timestamp, y.timestamp)) - strftime('%s', e.start_time)) as 'Time to Declaration Rejected or Payment Handled', COALESCE(x.activity, y.activity) as 'Final Activity' FROM event_log p INNER JOIN (SELECT MIN(timestamp) as start_time, idcase FROM event_log GROUP by idcase) e ON e.idcase = p.idcase LEFT JOIN event_log x ON x.idcase = e.idcase AND x.activity = 'Declaration rejected by employee' LEFT JOIN event_log y ON y.idcase = e.idcase AND y.activity = 'Payment handled' WHERE p.activity = 'End trip' OR x.activity IS NOT NULL OR y.activity IS NOT NULL ORDER BY p.idcase;
+SELECT p.idcase, p.activity, strftime('%s', p.timestamp) - strftime('%s', e.start_time) as 'Time Elapsed' FROM event_log p INNER JOIN (SELECT idcase, MIN(timestamp) as start_time FROM event_log GROUP BY idcase) e ON e.idcase = p.idcase WHERE p.activity IN ('End trip', 'Declaration rejected by employee', 'Payment handled') ORDER BY p.idcase, 'Time Elapsed';
+SELECT p.idcase, p.activity, strftime('%s', p.timestamp) - strftime('%s', LEAST(p.timestamp, x.timestamp, y.timestamp)) as 'Time Elapsed', (CASE WHEN p.timestamp = LEAST(p.timestamp, x.timestamp, y.timestamp) THEN 'End Trip' WHEN p.timestamp = LEAST(p.timestamp, x.timestamp, y.timestamp) THEN 'Declaration Rejected by Employee' ELSE 'Payment Handled' END) as 'Activity at End of Interval' FROM event_log p LEFT JOIN event_log x ON x.idcase = p.idcase AND x.activity = 'Declaration Rejected by Employee' LEFT JOIN event_log y ON y.idcase = p.idcase AND y.activity = 'Payment Handled' WHERE p.idcase IN (SELECT idcase FROM event_log GROUP BY idcase HAVING MIN(timestamp) IN (SELECT MIN(timestamp) FROM event_log WHERE activity IN ('End Trip', 'Declaration Rejected by Employee', 'Payment Handled'))) ORDER BY p.idcase, 'Time Elapsed';
+SELECT p.idcase, p.activity, strftime('%s', p.timestamp) - strftime('%s', e.start_time) as elapsed_time FROM event_log p INNER JOIN (SELECT idcase, MIN(timestamp) as start_time FROM event_log GROUP BY idcase) e ON e.idcase = p.idcase WHERE p.activity IN ('end trip', 'declaration rejected by employee', 'payment handled') ORDER BY p.idcase, p.activity;
+SELECT p.idcase, strftime('%s', p.timestamp) - strftime('%s', e.start_time) as 'End trip', strftime('%s', x.timestamp) - strftime('%s', e.start_time) as 'Declaration rejected by employee', strftime('%s', y.timestamp) - strftime('%s', e.start_time) as 'Payment handled' FROM event_log p INNER JOIN (SELECT MIN(timestamp) as start_time, idcase FROM event_log GROUP BY idcase) e ON e.idcase = p.idcase AND p.activity = 'End trip' LEFT JOIN event_log x ON x.idcase = e.idcase AND x.activity = 'Declaration rejected by employee' LEFT JOIN event_log y ON y.idcase = e.idcase AND y.activity = 'Payment handled';
+SELECT idcase FROM event_log WHERE idcase IN (SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment' ) GROUP BY idcase ORDER BY COUNT(*);
+SELECT * FROM event_log WHERE activity ='request payment'
+SELECT * FROM event_log WHERE activity = 'Request payment' AND idcase IN ( SELECT idcase FROM event_log WHERE activity = 'Payment handled' )
+SELECT activity, count(*) as num_interventions, SUM(cost) as total_cost FROM event_log WHERE activity = 'Request payment' GROUP BY activity;
+SELECT activity, AVG(timestamp - LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp)) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(MAX(strftime('%s', timestamp)) - MIN(strftime('%s', timestamp))) AS average_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(MAX(strftime('%s', timestamp)) - MIN(strftime('%s', timestamp))) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(TIMESTAMPDIFF(SECOND, timestamp, LEAD(timestamp) OVER (PARTITION BY activity ORDER BY timestamp)) / 3600) AS average_duration_hours FROM event_log GROUP BY activity;
+SELECT activity, AVG(DATEDIFF(timestamp, LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp))) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(DATEDIFF(timestamp, LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp))) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(DATEDIFF(MAX(timestamp), MIN(timestamp))) AS average_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(TIMESTAMPDIFF(SECOND, LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp), timestamp)) AS average_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(MAX(strftime('%s', timestamp)) - MIN(strftime('%s', timestamp))) AS average_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(timestamp - LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp)) AS average_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(TIMESTAMPDIFF(SECOND, LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp), timestamp)) AS average_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(TIMESTAMPDIFF(SECOND, LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp), timestamp)) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(cost) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(TIMESTAMPDIFF(SECOND, MIN(timestamp), MAX(timestamp))) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(cost) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(DATEDIFF(timestamp, LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp))) AS average_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(timestamp - LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp)) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(cost) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(TIMESTAMPDIFF(SECOND, LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp), timestamp)) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(cost) AS mean_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(cost) AS average_cost FROM event_log GROUP BY activity
+SELECT activity, AVG(timestamp - LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp)) AS average_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(TIMESTAMPDIFF(SECOND, LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp), timestamp)) AS average_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(timestamp - LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp)) AS average_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(timestamp - LAG(timestamp) OVER (PARTITION BY activity ORDER BY timestamp)) AS average_duration FROM event_log GROUP BY activity
+SELECT activity, AVG(MIN(strftime('%s', timestamp)) - MAX(strftime('%s', timestamp))) as 'Average duration' FROM event_log GROUP BY activity
+SELECT * FROM event_log WHERE idcase IN (SELECT idcase FROM event_log GROUP BY idcase ORDER BY SUM(cost) DESC LIMIT 1)
+SELECT idcase, MAX(cost) AS max_cost FROM event_log GROUP BY idcase ORDER BY max_cost DESC
+SELECT idcase FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT idcase, MAX(cost) AS highest_cost FROM event_log GROUP BY idcase ORDER BY highest_cost DESC LIMIT 1;
+SELECT * FROM event_log WHERE cost IN (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost IN (SELECT DISTINCT cost FROM event_log ORDER BY cost DESC LIMIT 5)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log) Note: The above SQL queries assume that the "cost" column in the "event_log" table contains numeric values. If the "cost" column contains non-numeric values, the queries may need to be modified accordingly.
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log)
+SELECT idcase FROM event_log GROUP BY idcase HAVING SUM(cost) = (SELECT SUM(cost) FROM event_log GROUP BY idcase ORDER BY SUM(cost) DESC LIMIT 1)
+SELECT * FROM event_log WHERE activity = 'Start trip';
+SELECT * FROM event_log WHERE activity = 'Start trip';
+SELECT * FROM event_log WHERE activity = 'Start trip';
+select count(*), activity from event_log where activity = 'Start trip' or activity = 'End trip' GROUP BY activity
+select DISTINCT idcase FROM (select idcase, timestamp, activity FROM event_log GROUP BY idcase HAVING strftime('%Y-%m', MIN(timestamp)) = '2017-03') where activity = 'Start trip'
+SELECT * FROM event_log WHERE activity = 'Start trip';
+SELECT * FROM event_log WHERE activity = 'Start trip';
+SELECT * FROM event_log WHERE activity = 'Start trip';
+SELECT * FROM event_log WHERE activity = 'Start trip';
+select DISTINCT idcase FROM (select idcase, timestamp, activity FROM event_log GROUP BY idcase HAVING strftime('%Y-%m', MIN(timestamp)) = '2017-03') where activity = 'Start trip';
+SELECT * FROM event_log WHERE activity = 'Start trip';
+SELECT * FROM event_log WHERE activity = 'Start trip';
+select DISTINCT idcase FROM (select idcase, timestamp, activity FROM event_log GROUP BY idcase HAVING strftime('%Y-%m', MIN(timestamp)) = '2017-03') where activity = 'Start trip';
+SELECT * FROM event_log WHERE activity = 'Start trip';
+SELECT * FROM event_log WHERE activity = 'Start trip';
+select DISTINCT idcase FROM (select idcase, timestamp, activity FROM event_log GROUP BY idcase HAVING strftime('%Y-%m', MIN(timestamp)) = '2017-03') where activity = 'Start trip';
+SELECT * FROM event_log WHERE activity = 'Start trip'
+SELECT idcase, activity, timestamp FROM event_log WHERE activity = 'Start trip'
+SELECT activity, COUNT(*) as total_records FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) AS total_performances FROM event_log GROUP BY activity
+SELECT activity, SUM(1) AS total_performances FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) as event_count FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) as count FROM event_log GROUP BY activity
+SELECT COUNT(DISTINCT id), activity FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) as num_events FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) AS num_events FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) AS num_events FROM event_log GROUP BY activity;
+SELECT activity, COUNT(*) AS event_count FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) as total_performances FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) as total_performances FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) AS num_events FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) as count FROM event_log GROUP BY activity
+SELECT COUNT(DISTINCT idcase), activity FROM event_log GROUP BY activity;
+SELECT activity, COUNT(*) as num_interventions FROM event_log GROUP BY activity ORDER BY num_interventions DESC;
+SELECT COUNT(*) AS frequency, activity FROM event_log GROUP BY activity;
+SELECT activity, COUNT(*) AS num_interventions FROM event_log GROUP BY activity ORDER BY num_interventions DESC;
+SELECT activity, COUNT(*) as count FROM event_log GROUP BY activity
+SELECT activity, COUNT(*) as count FROM event_log GROUP BY activity
+SELECT idcase, activity, COUNT(*) as num_interventions FROM event_log GROUP BY idcase, activity
+SELECT idcase, activity, COUNT(*) as count FROM event_log GROUP BY idcase, activity
+SELECT cost, activity FROM event_log ORDER BY cost;
+SELECT cost, activity FROM event_log ORDER BY cost DESC;
+SELECT cost, activity FROM event_log ORDER BY cost;
+SELECT activity, cost FROM event_log ORDER BY cost ASC
+SELECT activity, cost FROM event_log ORDER BY cost;
+SELECT cost, activity FROM event_log ORDER BY cost;
+SELECT activity, cost, id FROM event_log ORDER BY cost DESC;
+SELECT id, activity, resource, cost FROM event_log ORDER BY cost DESC;
+SELECT * FROM event_log WHERE activity LIKE 'Permit%';
+SELECT * FROM event_log WHERE activity LIKE 'Permit%';
+SELECT * FROM event_log WHERE activity LIKE 'Permit%'
+SELECT * FROM event_log WHERE activity LIKE 'Permit%';
+SELECT * FROM event_log WHERE activity LIKE 'Permit%';
+SELECT * FROM event_log WHERE activity LIKE 'Permit%';
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE 'Permit%'
+SELECT * FROM event_log WHERE activity LIKE 'Permit%'
+SELECT * FROM event_log WHERE activity = 'Permit'
+SELECT * FROM event_log WHERE activity LIKE 'Permit%';
+SELECT DISTINCT activity, idcase FROM event_log WHERE activity LIKE '%permit%' AND activity LIKE '%declaration%'
+SELECT * FROM event_log WHERE activity LIKE '%permit%' AND idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 1 )
+SELECT MAX(cost) FROM event_log
+SELECT MAX(cost) FROM event_log
+SELECT MAX(cost) FROM event_log;
+SELECT MAX(cost) FROM event_log;
+SELECT MAX(cost) FROM event_log
+SELECT MAX(cost) FROM event_log
+SELECT DISTINCT idcase FROM event_log WHERE resource = 'Sara' AND resource = 'Thomas'
+SELECT DISTINCT idcase FROM event_log WHERE resource = 'Sara' AND resource = 'Thomas'
+SELECT DISTINCT idcase FROM event_log WHERE resource = 'Sara' AND resource = 'Thomas'
+SELECT DISTINCT idcase FROM event_log WHERE resource = 'Sara' AND idcase IN ( SELECT idcase FROM event_log WHERE resource = 'Thomas' )
+SELECT DISTINCT idcase FROM event_log WHERE resource = 'Sara' AND resource = 'Thomas'
+SELECT idcase FROM event_log WHERE resource = 'Sara' AND idcase IN ( SELECT idcase FROM event_log WHERE resource = 'Thomas' )
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'declaration rejected by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource
+SELECT COUNT(*) AS total_instances, resource FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'declaration rejected by administration' GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource
+SELECT COUNT(*), resource, idcase FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY idcase, resource
+SELECT COUNT(*), resource, idcase FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource, idcase
+SELECT resource, idcase, COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource, idcase
+SELECT COUNT(*), resource, idcase FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource, idcase
+SELECT COUNT(*), resource, idcase FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource, idcase
+SELECT idcase, resource, COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY idcase, resource
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'declaration rejected by administration' GROUP BY resource
+SELECT COUNT(*), resource, idcase FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource, idcase
+SELECT resource, idcase, COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by administration' GROUP BY resource, idcase
+SELECT idcase, resource, COUNT(*) FROM event_log WHERE activity = 'declaration rejected by administration' GROUP BY idcase, resource
+SELECT el1.resource, el1.idcase, COUNT(*) FROM event_log el1 WHERE el1.activity = 'Declaration rejected by administration' GROUP BY el1.resource, el1.idcase
+SELECT AVG(cost) FROM event_log WHERE activity NOT IN ('start trip', 'end trip');
+SELECT AVG(cost) FROM event_log WHERE activity NOT IN ('start trip', 'end trip');
+SELECT AVG(cost) FROM event_log WHERE activity NOT IN ('start trip', 'end trip');
+SELECT AVG(cost) FROM event_log WHERE activity NOT IN ('Start trip', 'End trip')
+SELECT AVG(cost) FROM event_log WHERE activity NOT IN ('Start trip', 'End trip');
+SELECT AVG(cost) FROM event_log WHERE activity NOT IN ('start trip', 'end trip');
+SELECT AVG(cost) FROM event_log WHERE activity NOT IN ('start trip', 'end trip')
+SELECT AVG(cost) FROM event_log WHERE activity NOT IN ('start trip', 'end trip')
+SELECT AVG(cost) FROM event_log WHERE activity NOT IN ('start trip', 'end trip');
+SELECT AVG(cost) FROM event_log WHERE activity NOT IN ('begin trip', 'end trip')
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log) ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log) ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log WHERE cost = (SELECT MAX(cost) FROM event_log) ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT * FROM event_log ORDER BY cost DESC LIMIT 5;
+SELECT idcase, SUM(cost) as total_cost FROM event_log GROUP BY idcase ORDER BY total_cost DESC LIMIT 5;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 1;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 1
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 1;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3
+SELECT DISTINCT idcase FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 1
+SELECT DISTINCT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 1
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 1
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 1;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 1
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 1
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 1
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02'
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02'
+SELECT * FROM event_log WHERE timestamp IN ('2018-10-01', '2018-10-02')
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02'
+SELECT * FROM event_log WHERE timestamp IN ('2018-10-01', '2018-10-02')
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02'
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02';
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02'
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02'
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02';
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02'
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02';
+SELECT * FROM event_log WHERE strftime('%Y-%m-%d', timestamp) IN ('2018-10-01', '2018-10-02');
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02';
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02';
+SELECT * FROM event_log WHERE timestamp IN ('2018-10-01', '2018-10-02')
+SELECT activity, COUNT(*) as frequency FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02' GROUP BY activity
+SELECT DISTINCT activity FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02';
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-10-01' AND '2018-10-02'
+SELECT * FROM event_log WHERE resource LIKE 'M%'
+SELECT * FROM event_log WHERE resource LIKE 'M%'
+SELECT * FROM event_log WHERE resource COLLATE NOCASE LIKE 'M%'
+SELECT * FROM event_log WHERE resource LIKE 'M%';
+SELECT * FROM event_log WHERE resource LIKE 'M%'
+SELECT * FROM event_log WHERE resource COLLATE NOCASE LIKE 'M%';
+SELECT DISTINCT activity FROM event_log WHERE resource IN ( SELECT resource FROM event_log WHERE resource LIKE 'M%' ) ORDER BY activity;
+SELECT * FROM event_log WHERE resource LIKE 'M%' ORDER BY timestamp;
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5
+SELECT DISTINCT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5;
+SELECT DISTINCT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5;
+SELECT DISTINCT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5
+SELECT DISTINCT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5
+SELECT DISTINCT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5;
+SELECT DISTINCT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5;
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 5
+SELECT idcase, activity FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 3
+SELECT idcase, activity FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 3
+SELECT idcase, activity FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 3
+SELECT idcase, activity FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 3
+SELECT idcase, activity FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 3
+SELECT idcase, activity FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 3
+SELECT idcase, activity FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 3
+SELECT idcase, activity FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 3
+SELECT idcase, activity FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 3
+SELECT idcase, activity FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 3
+SELECT idcase, activity, COUNT(*) as count FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 3
+SELECT COUNT(*) FROM event_log WHERE idcase = 'declaration 56300';
+SELECT COUNT(*) FROM event_log WHERE idcase = 'declaration 56300'
+SELECT COUNT(*) FROM event_log WHERE idcase = 'declaration 56300';
+SELECT COUNT(*) FROM event_log WHERE idcase = 'declaration 56300';
+SELECT COUNT(*) FROM event_log WHERE idcase = 'declaration 56300';
+SELECT e.idcase, COUNT(*) FROM event_log e INNER JOIN (SELECT idcase, MIN(timestamp) as timestamp FROM event_log where activity='Declaration final approved by director' GROUP BY idcase order by idcase) e1 on e.idcase = e1.idcase and e.timestamp < e1.timestamp GROUP BY e.idcase
+SELECT COUNT(*) FROM event_log WHERE idcase = '56300';
+SELECT activity, COUNT(*) as count FROM event_log WHERE timestamp < '2017-10-01' GROUP BY activity HAVING COUNT(*) > 1
+SELECT activity, COUNT(*) as count FROM event_log WHERE timestamp < '2017-10-01' GROUP BY activity HAVING COUNT(*) > 1
+SELECT activity, count(*) FROM event_log WHERE timestamp < '2017-01-10' GROUP BY activity HAVING count(*) > 1
+SELECT activity, count(*) as count FROM event_log WHERE timestamp < '2017-01-10' GROUP BY activity HAVING count(*) > 1
+SELECT activity, count(*) FROM event_log WHERE timestamp < '2017-01-10' GROUP BY activity HAVING count(*) > 1;
+SELECT activity, COUNT(*) FROM event_log WHERE timestamp < '2017-01-10' GROUP BY activity HAVING COUNT(*) > 1;
+SELECT activity, COUNT(*) FROM event_log WHERE timestamp < '2017-10-01' GROUP BY activity HAVING COUNT(*) > 1;
+SELECT activity, COUNT(*) as count FROM event_log WHERE timestamp < '2017-10-01' GROUP BY activity HAVING COUNT(*) > 1
+SELECT activity, count(*) FROM event_log WHERE timestamp < '2017-01-10' GROUP BY activity HAVING count(*) > 1
+SELECT activity, COUNT(*) FROM event_log WHERE timestamp < '2017-10-01' GROUP BY activity;
+SELECT COUNT(*) FROM event_log WHERE activity IN (SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 1) AND timestamp < '2017-01-10';
+SELECT resource, COUNT(DISTINCT idcase) FROM event_log GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) from event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) as num_cases FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) from event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) from event_log GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) AS num_instances FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) from event_log GROUP BY resource
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT COUNT(*) as allocation_count, resource FROM event_log GROUP BY resource
+SELECT COUNT(*) AS total_actions, resource FROM event_log GROUP BY resource
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT COUNT(*) AS total_activities, resource FROM event_log GROUP BY resource
+SELECT COUNT(*) AS occurrences, resource FROM event_log GROUP BY resource
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT idcase FROM event_log WHERE resource IN ('Thomas', 'Diana', 'Sara')
+SELECT DISTINCT idcase FROM event_log WHERE resource IN ('Thomas', 'Diana', 'Sara')
+SELECT DISTINCT idcase FROM event_log WHERE resource IN ('Thomas', 'Diana', 'Sara')
+SELECT idcase FROM event_log WHERE resource IN ('Thomas', 'Diana', 'Sara');
+SELECT idcase FROM event_log WHERE resource = 'Sara' INTERSECT SELECT idcase FROM event_log WHERE resource = 'Thomas'
+SELECT COUNT(DISTINCT idcase) AS num_cases, resource FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) FROM event_log WHERE timestamp BETWEEN '2017-05-01' AND '2017-06-01' AND activity LIKE '%intervention%' GROUP BY resource
+SELECT activity, resource FROM event_log WHERE resource NOT IN ('Joshua', 'Teresa') ORDER BY activity, resource;
+SELECT activity, resource FROM event_log WHERE resource NOT IN ('Joshua', 'Teresa')
+SELECT activity, resource FROM event_log WHERE resource NOT IN ('Joshua', 'Teresa')
+SELECT activity, resource FROM event_log WHERE idcase NOT IN ( SELECT idcase FROM event_log WHERE resource IN ('Joshua', 'Teresa') ) AND activity LIKE '%intervention%'
+SELECT * FROM event_log WHERE activity NOT LIKE '%Joshua%' AND activity NOT LIKE '%Teresa%' AND activity NOT LIKE '%employee%' AND activity NOT LIKE '%supervisor%' AND activity NOT LIKE '%administration%' AND activity NOT LIKE '%pre-approver%' AND activity NOT LIKE '%budget owner%' AND activity NOT LIKE '%director%'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' OR activity = 'End trip' EXCEPT SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request Payment' OR activity = 'Payment handled';
+SELECT DISTINCT idcase FROM event_log WHERE activity IN ('start trip', 'end trip') AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity IN ('request payment', 'payment handled') )
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled' ) AND idcase IN ( SELECT idcase FROM event_log WHERE activity = 'Start trip' OR activity = 'End trip' )
+SELECT DISTINCT idcase FROM event_log WHERE activity IN ('Start trip', 'End trip') AND idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled')
+SELECT DISTINCT idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log WHERE activity = 'Start trip' UNION SELECT idcase FROM event_log WHERE activity = 'End trip' ) AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled' )
+SELECT DISTINCT idcase FROM event_log WHERE activity NOT IN ('Request payment', 'Payment handled')
+SELECT DISTINCT idcase FROM event_log WHERE activity IN ('Start trip', 'End trip') AND idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request Payment' OR activity = 'Payment handled')
+SELECT DISTINCT idcase FROM event_log WHERE activity IN ('Start trip', 'End trip') AND idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled')
+SELECT idcase FROM event_log WHERE activity IN ('Start trip', 'End trip') AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity IN ('Request Payment', 'Payment handled') )
+SELECT DISTINCT idcase FROM event_log WHERE activity IN ('Start trip', 'End trip') AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity IN ('Request Payment', 'Payment handled') )
+SELECT * FROM event_log WHERE resource IS NULL
+SELECT * FROM event_log WHERE resource IS NULL OR resource = '';
+SELECT activity FROM event_log WHERE resource IS NULL;
+SELECT * FROM event_log WHERE resource IS NULL
+SELECT id, activity, timestamp, cost, idcase FROM event_log WHERE resource IS NULL
+SELECT activity FROM event_log WHERE resource IS NULL;
+SELECT * FROM event_log WHERE resource IS NULL
+SELECT * FROM event_log WHERE resource IS NULL OR resource = ''
+SELECT idcase FROM event_log GROUP BY idcase HAVING MIN(timestamp) < '2017-03-01'
+SELECT idcase FROM event_log GROUP BY idcase HAVING strftime('%Y-%m', MIN(timestamp)) < '2017-03'
+SELECT DISTINCT idcase FROM event_log WHERE activity = (SELECT activity FROM event_log WHERE timestamp = (SELECT MIN(timestamp) FROM event_log) AND strftime('%Y-%m', timestamp) < '2017-03')
+SELECT idcase FROM event_log WHERE timestamp < '2017-03-01'
+SELECT idcase FROM event_log GROUP BY idcase HAVING MIN(timestamp) < '2017-03-01'
+SELECT idcase FROM event_log WHERE activity = (SELECT activity FROM event_log WHERE timestamp = (SELECT MIN(timestamp) FROM event_log WHERE strftime('%Y', timestamp) = '2017') )
+SELECT idcase FROM event_log WHERE timestamp < '2017-03-01'
+SELECT idcase FROM event_log WHERE timestamp < '2017-03-01' ORDER BY timestamp ASC LIMIT 1;
+SELECT DISTINCT(idcase) FROM event_log WHERE timestamp < '2017-03-01 00:00:00'
+SELECT idcase FROM event_log WHERE timestamp < '2017-03-01' GROUP BY idcase HAVING COUNT(*) > 0
+SELECT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp BETWEEN '2017-03-01' AND '2017-03-31'
+SELECT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp BETWEEN '2017-03-01' AND '2017-03-31' ORDER BY timestamp ASC LIMIT 1;
+SELECT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp BETWEEN '2017-03-01' AND '2017-03-31'
+SELECT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp >= '2017-03-01' AND timestamp < '2017-04-01' ORDER BY timestamp LIMIT 1;
+SELECT DISTINCT idcase FROM event_log WHERE activity ='start trip' AND id = ( SELECT MIN(id) FROM event_log WHERE activity ='start trip' AND timestamp BETWEEN '2017-01-03' AND '2017-03-31' GROUP BY idcase )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp BETWEEN '2017-01-03' AND '2017-03-31' ORDER BY idcase;
+SELECT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp >= '2017-03-01'
+SELECT resource, idcase, COUNT(*) as count FROM event_log GROUP BY resource, idcase HAVING COUNT(*) > 5
+SELECT resource, COUNT(*) as num_events FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 5 ) GROUP BY resource
+SELECT resource, COUNT(*) as count FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 5 ) GROUP BY resource
+SELECT resource, COUNT(*) as num_actions FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT resource) = 1 ) GROUP BY resource HAVING COUNT(*) > 5;
+SELECT resource, COUNT(*) AS num_events FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 5 ) GROUP BY resource
+SELECT resource, COUNT(*) as num_events FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 5 ) GROUP BY resource
+SELECT resource, idcase, COUNT(*) AS num_events FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT resource) > 5 ) GROUP BY resource, idcase
+SELECT resource FROM event_log GROUP BY resource HAVING COUNT(*) > 5
+SELECT resource, idcase FROM event_log GROUP BY resource, idcase HAVING COUNT(*) > 5
+SELECT resource FROM event_log GROUP BY resource, idcase HAVING COUNT(*) > 5
+SELECT resource, idcase, COUNT(*) FROM event_log GROUP BY resource, idcase HAVING COUNT(*) > 5;
+SELECT activity, COUNT(*) as frequency FROM event_log GROUP BY activity ORDER BY frequency DESC LIMIT 1;
+SELECT activity, COUNT(*) as frequency FROM event_log GROUP BY activity ORDER BY frequency DESC LIMIT 5;
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) = (SELECT COUNT(*) FROM event_log GROUP BY activity ORDER BY COUNT(*) DESC LIMIT 1)
+SELECT activity FROM event_log GROUP BY activity ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT activity, COUNT(*) as frequency FROM event_log GROUP BY activity ORDER BY frequency DESC LIMIT 5;
+SELECT resource FROM event_log WHERE activity = 'Declaration final approved by supervisor' GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 10;
+SELECT resource, COUNT(*) as frequency FROM event_log WHERE activity = 'Declaration final approved by supervisor' GROUP BY resource ORDER BY frequency DESC LIMIT 10;
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity = 'Declaration final approved by supervisor' GROUP BY resource ORDER BY count DESC LIMIT 10;
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity = 'Declaration final approved by supervisor' GROUP BY resource ORDER BY count DESC;
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'Declaration final approved by supervisor' GROUP BY resource ORDER BY COUNT(*) DESC;
+SELECT resource, COUNT(*) as frequency FROM event_log WHERE activity = 'Declaration final approved by supervisor' GROUP BY resource ORDER BY frequency DESC;
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity = 'Declaration final approved by supervisor' GROUP BY resource ORDER BY count DESC;
+SELECT resource FROM event_log WHERE activity = 'Declaration final approved by supervisor' GROUP BY resource ORDER BY COUNT(*) DESC
+SELECT COUNT(*) FROM event_log WHERE activity LIKE '%declaration approved by budget owner%' AND (resource = 'Eugene' OR resource = 'Marie');
+SELECT COUNT(*) FROM event_log WHERE activity = 'declaration approved by budget owner' AND resource IN ('Eugene', 'Marie')
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Declaration approved by budget owner' AND resource IN ('Eugene', 'Marie')
+SELECT COUNT(*) FROM event_log WHERE activity = 'declaration approved by budget owner' AND (resource = 'Eugene' OR resource = 'Marie')
+SELECT COUNT(*) FROM event_log WHERE activity = 'Declaration approved by budget owner' AND resource IN ('Eugene', 'Marie');
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Declaration approved by budget owner' AND resource IN ('Eugine', 'Marie');
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'declaration approved by budget owner' AND resource IN ('Eugine', 'Marie')
+SELECT resource, COUNT(*) FROM event_log WHERE activity LIKE '%budget owner%' AND activity LIKE '%approved%' GROUP BY resource
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE resource IN ('Eugene', 'Marie') AND activity = 'approved'
+SELECT activity FROM event_log WHERE idcase = 'declaration 49464' EXCEPT SELECT activity FROM event_log WHERE idcase = 'declaration 76667';
+SELECT activity FROM event_log WHERE idcase = 'declaration 49464' AND activity NOT IN ( SELECT activity FROM event_log WHERE idcase = 'declaration 76667' )
+SELECT DISTINCT activity FROM event_log WHERE idcase = 'declaration 49464' AND activity NOT IN ( SELECT activity FROM event_log WHERE idcase = 'declaration 76667' )
+SELECT activity FROM event_log WHERE idcase = 'declaration 49464' EXCEPT SELECT activity FROM event_log WHERE idcase = 'declaration 76667';
+SELECT COUNT(*) FROM event_log WHERE resource IN ( SELECT resource FROM event_log WHERE activity = 'Declaration submitted by employee' GROUP BY resource HAVING COUNT(*) > 2 ) AND activity = 'Declaration submitted by employee'
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity = 'declaration submitted by employee' GROUP BY resource HAVING COUNT(*) > 2 ORDER BY resource;
+SELECT resource, count(*) as performance_count FROM event_log WHERE activity = 'Declaration submitted by employee' GROUP BY resource HAVING count(*) > 2 ORDER BY resource;
+SELECT COUNT(*), resource FROM event_log WHERE activity = 'Declaration submitted by employee' GROUP BY resource HAVING COUNT(*) > 2 ORDER BY resource;
+SELECT resource, count(*) as count FROM event_log WHERE activity = 'Declaration submitted by employee' GROUP BY resource HAVING count(*) > 2
+SELECT resource, COUNT(*) AS count FROM event_log WHERE activity = 'Declaration submitted by employee' GROUP BY resource HAVING COUNT(*) > 2
+SELECT resource, COUNT(*) as num_requests FROM event_log WHERE activity = 'Request declaration' GROUP BY resource HAVING COUNT(*) > 2
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment' AND timestamp BETWEEN '2017-05-01' AND '2017-05-10';
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment' AND timestamp BETWEEN '2017-05-01 00:00:00' AND '2017-05-10 23:59:59' ORDER BY timestamp ASC;
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment' AND timestamp BETWEEN '2017-05-01 00:00:00' AND '2017-05-10 23:59:59'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment' AND timestamp BETWEEN '2017-05-01' AND '2017-05-10'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment' AND timestamp BETWEEN '2017-05-01 00:00:00' AND '2017-05-10 23:59:59';
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment' AND timestamp BETWEEN '2017-05-01' AND '2017-05-10' ORDER BY COUNT(*) ASC;
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment' AND timestamp BETWEEN '2017-05-01' AND '2017-05-10'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment' AND timestamp BETWEEN '2017-05-01 00:00:00' AND '2017-05-10 23:59:59'
+SELECT idcase, COUNT(DISTINCT resource) as num_resources FROM event_log GROUP BY idcase
+SELECT idcase, COUNT(resource) as num_resources FROM event_log GROUP BY idcase
+SELECT COUNT(DISTINCT resource), idcase FROM event_log GROUP BY idcase
+SELECT idcase, COUNT(DISTINCT resource) as num_resources FROM event_log GROUP BY idcase
+SELECT COUNT(DISTINCT resource), idcase FROM event_log GROUP BY idcase
+SELECT COUNT(DISTINCT resource), idcase FROM event_log GROUP BY idcase
+SELECT idcase, COUNT(DISTINCT resource) as num_resources FROM event_log GROUP BY idcase
+SELECT idcase, COUNT(DISTINCT resource) AS num_employees FROM event_log GROUP BY idcase
+SELECT idcase FROM event_log WHERE resource = 'Christopher' AND id NOT IN ( SELECT id FROM event_log WHERE resource!= 'Christopher' )
+SELECT idcase FROM event_log WHERE resource = 'Christopher' AND cost = 0
+SELECT idcase from event_log group by idcase HAVING COUNT(DISTINCT resource) = 1 AND resource = 'Christopher'
+SELECT COUNT(DISTINCT idcase), resource FROM event_log GROUP BY resource
+SELECT idcase FROM event_log WHERE resource = 'Christopher' AND idcase NOT IN ( SELECT idcase FROM event_log WHERE resource!= 'Christopher' )
+SELECT idcase from event_log group by idcase HAVING COUNT(DISTINCT resource) = 1 AND resource = 'Christopher'
+SELECT idcase from event_log group by idcase HAVING COUNT(DISTINCT resource) = 1 AND resource = 'Christopher'
+SELECT idcase FROM event_log WHERE resource = 'Christopher' GROUP BY idcase HAVING COUNT(DISTINCT activity) = 1;
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT id) = (SELECT COUNT(*) FROM event_log WHERE idcase = event_log.idcase)
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT id) = 1
+SELECT idcase, resource from event_log group by idcase HAVING COUNT(DISTINCT resource) = 1
+SELECT idcase, resource from event_log group by idcase HAVING COUNT(DISTINCT resource) = 1
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT resource) = 1
+SELECT idcase from event_log group by idcase HAVING COUNT(DISTINCT resource) = 1
+SELECT idcase, resource, COUNT(*) AS count FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT resource) > 1
+SELECT idcase, resource FROM event_log GROUP BY idcase, resource HAVING COUNT(DISTINCT id) = 1;
+SELECT idcase, timestamp FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase, DATE(timestamp) HAVING COUNT(*) > 1 )
+SELECT idcase FROM event_log GROUP BY idcase, DATE(timestamp) HAVING COUNT(*) > 1
+SELECT idcase FROM event_log GROUP BY idcase, DATE(timestamp) HAVING COUNT(*) > 1
+SELECT idcase FROM event_log GROUP BY idcase, DATE(timestamp) HAVING COUNT(*) > 1
+SELECT idcase, timestamp FROM event_log GROUP BY idcase, timestamp HAVING COUNT(*) > 1
+SELECT idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM ( SELECT idcase, activity, timestamp, LAG(activity) OVER (PARTITION BY idcase ORDER BY timestamp) AS prev_activity FROM event_log ) AS t WHERE activity = prev_activity )
+SELECT idcase, DATE(timestamp) AS date, COUNT(*) AS num_interventions FROM event_log GROUP BY idcase, DATE(timestamp) HAVING COUNT(*) > 1
+SELECT idcase, resource, COUNT(*) FROM event_log WHERE cost = 0 GROUP BY idcase, resource
+SELECT idcase, resource, COUNT(*) AS zero_cost_events FROM event_log WHERE cost = 0 GROUP BY idcase, resource
+SELECT idcase, resource, COUNT(*) AS zero_cost_events FROM event_log WHERE cost = 0 GROUP BY idcase, resource
+SELECT resource, COUNT(*) as zero_cost_events FROM event_log WHERE cost = 0 GROUP BY resource, idcase
+SELECT resource, idcase, COUNT(*) AS null_cost_events FROM event_log WHERE cost IS NULL GROUP BY resource, idcase
+SELECT resource, COUNT(*) FROM event_log WHERE cost = 0 GROUP BY resource, idcase;
+SELECT resource, COUNT(*) as num_interventions_without_cost FROM event_log WHERE cost IS NULL GROUP BY resource
+SELECT resource, COUNT(*) AS non_cost_reporting_interventions FROM event_log WHERE cost IS NULL GROUP BY resource
+SELECT * FROM event_log WHERE activity = 'permit rejected by director'
+SELECT * FROM event_log WHERE activity = 'Permit rejected by director';
+SELECT * FROM event_log WHERE activity = 'permit rejected by director';
+SELECT * FROM event_log WHERE activity = 'Permit rejected by director';
+SELECT * FROM event_log WHERE activity LIKE '%Permit rejected by director%';
+SELECT * FROM event_log WHERE activity = 'Permit rejected by director'
+SELECT * FROM event_log WHERE activity LIKE '%Permit%' AND activity LIKE '%rejected%' AND activity LIKE '%director%'
+SELECT * FROM event_log WHERE activity = 'Declaration rejected by director'
+SELECT DATE(timestamp) AS date, SUM(cost) AS total_cost FROM event_log GROUP BY DATE(timestamp) ORDER BY date;
+SELECT DATE(timestamp) AS date, SUM(cost) AS total_cost FROM event_log GROUP BY DATE(timestamp)
+SELECT DATE(timestamp) AS date, SUM(cost) AS total_cost FROM event_log GROUP BY DATE(timestamp)
+SELECT DATE(timestamp) AS date, SUM(cost) AS total_cost FROM event_log GROUP BY DATE(timestamp) ORDER BY date;
+SELECT DATE(timestamp) AS date, SUM(cost) AS total_cost FROM event_log GROUP BY DATE(timestamp) ORDER BY date;
+SELECT DATE(timestamp) AS date, SUM(cost) AS total_cost FROM event_log GROUP BY DATE(timestamp) ORDER BY total_cost DESC;
+SELECT strftime('%Y-%m-%d', timestamp) as event_date, SUM(cost) as total_cost FROM event_log GROUP BY strftime('%Y-%m-%d', timestamp)
+SELECT DATE(timestamp) AS date, SUM(cost) AS total_cost FROM event_log GROUP BY DATE(timestamp)
+SELECT id, activity, resource, cost FROM event_log WHERE cost > 1000 AND resource IN ('supervisor', 'director')
+SELECT activity, cost FROM event_log WHERE activity LIKE '%supervisor%' OR activity LIKE '%director%' AND cost > 1000
+SELECT activity, resource, cost FROM event_log WHERE cost > 1000 AND (resource LIKE '%supervisor%' OR resource LIKE '%director%');
+SELECT activity, resource, cost FROM event_log WHERE activity LIKE '%supervisor%' OR activity LIKE '%director%' AND cost > 1000;
+SELECT * FROM event_log WHERE cost > 1000 AND resource IN ('supervisor', 'director')
+SELECT activity, cost FROM event_log WHERE activity LIKE '%supervisor%' OR activity LIKE '%director%' AND cost > 1000
+SELECT idcase, COUNT(*) as events_count FROM event_log GROUP BY idcase
+SELECT idcase, COUNT(*) as events_per_case FROM event_log GROUP BY idcase
+SELECT COUNT(*), idcase FROM event_log GROUP BY idcase
+SELECT idcase, COUNT(*) as events_count FROM event_log GROUP BY idcase ORDER BY events_count DESC;
+SELECT count(*), idcase FROM event_log group by idcase Let me know if you have any further questions or if there's anything else I can help you with!
+SELECT COUNT(*), idcase FROM event_log GROUP BY idcase
+SELECT idcase, COUNT(*) as num_interventions FROM event_log GROUP BY idcase
+SELECT resource, COUNT(*) as num_tasks FROM event_log GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log GROUP BY resource
+SELECT COUNT(DISTINCT activity), resource FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT activity) AS num_activities FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource
+SELECT COUNT(*) AS num_actions_assigned, resource FROM event_log WHERE activity LIKE 'Assign%' -- Assuming the assigned actions start with "Assign" GROUP BY resource
+SELECT idcase, COUNT(*) AS num_activities FROM event_log WHERE resource = 'Alexis' GROUP BY idcase
+SELECT idcase, count(DISTINCT activity) FROM event_log WHERE resource = 'Alexis' GROUP BY idcase
+SELECT idcase, COUNT(DISTINCT activity) AS num_activities FROM event_log WHERE resource = 'Alexis' GROUP BY idcase
+SELECT idcase, COUNT(*) AS num_activities FROM event_log WHERE resource = 'Alexis' GROUP BY idcase
+SELECT idcase, COUNT(*) FROM event_log WHERE resource = 'Alexis' GROUP BY idcase
+SELECT idcase, COUNT(*) as num_activities FROM event_log WHERE resource = 'Alexis' GROUP BY idcase
+SELECT activity, idcase FROM event_log WHERE resource = 'Alexis' GROUP BY activity, idcase
+SELECT idcase, COUNT(*) as num_actions FROM event_log WHERE resource = 'Alexis' GROUP BY idcase
+SELECT COUNT(*) FROM (SELECT idcase FROM event_log WHERE activity = 'Permit final approved by supervisor') AS permit_cases JOIN event_log AS start_trip ON permit_cases.idcase = start_trip.idcase WHERE start_trip.activity ='start trip';
+SELECT COUNT(*) FROM event_log WHERE id IN ( SELECT idcase FROM event_log WHERE activity = 'Permit final approved by supervisor' ) AND activity = 'Start trip'
+WITH RankedEvents AS ( SELECT id, activity, timestamp, LEAD(activity) OVER (PARTITION BY idcase ORDER BY timestamp) AS next_activity, idcase FROM event_log ) SELECT COUNT(*) AS num_cases FROM RankedEvents WHERE activity = 'Permit final approved by supervisor' AND next_activity = 'Start trip';
+SELECT COUNT(*) FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e1.activity = 'Permit final approved by supervisor' AND e2.activity = 'Start trip' AND e1.timestamp < e2.timestamp GROUP BY e1.idcase
+SELECT COUNT(*) FROM event_log AS start_trip WHERE EXISTS ( SELECT 1 FROM event_log AS permit_approved WHERE permit_approved.activity = 'Permit final approved by supervisor' AND permit_approved.id < start_trip.id AND permit_approved.timestamp < start_trip.timestamp ) AND start_trip.activity = 'Start trip'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Permit final approved by director' AND idcase IN ( SELECT idcase FROM event_log WHERE activity LIKE 'Start trip' AND timestamp > ( SELECT timestamp FROM event_log WHERE activity = 'Permit final approved by director' AND idcase = event_log.idcase ) )
+SELECT COUNT(*) FROM ( SELECT idcase FROM event_log WHERE activity = 'Permit final approved by director' AND timestamp < ( SELECT MIN(timestamp) FROM event_log WHERE activity = 'Trip started' ) GROUP BY idcase ) AS permit_before_trip
+SELECT COUNT(*) FROM event_log WHERE activity LIKE 'Permit%' AND timestamp < (SELECT timestamp FROM event_log WHERE activity = 'Start trip')
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND timestamp NOT LIKE '%2017-12-12%'
+SELECT * FROM event_log WHERE activity = 'End trip' AND timestamp < '2017-12-12' OR timestamp > '2017-12-12'
+SELECT * FROM event_log WHERE activity = 'End trip' AND timestamp <= '2017-12-12' OR timestamp >= '2017-12-12'
+SELECT * FROM event_log WHERE activity = 'End trip' AND timestamp <= '2017-12-12' OR timestamp >= '2017-12-12'
+SELECT DISTINCT idcase, activity, timestamp FROM event_log WHERE activity = 'End trip' AND timestamp NOT LIKE '%2017-12-12%' AND timestamp BETWEEN '2016-01-01' AND '2018-01-01'
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND timestamp NOT LIKE '%2017-12-12%'
+SELECT idcase FROM event_log WHERE activity = 'End trip' AND timestamp::date = '2017-12-12';
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) AS num_events FROM event_log GROUP BY resource;
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT activity) AS num_activities FROM event_log GROUP BY resource
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT COUNT(*), resource FROM event_log GROUP BY resource
+SELECT COUNT(DISTINCT activity), resource FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT activity) as num_activities FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT activity) FROM event_log GROUP BY resource
+SELECT COUNT(DISTINCT activity), resource FROM event_log GROUP BY resource
+SELECT COUNT(*) AS num_activities, resource FROM event_log GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(DISTINCT activity) FROM event_log GROUP BY resource
+SELECT COUNT(DISTINCT id), resource FROM event_log GROUP BY resource
+SELECT activity FROM event_log WHERE resource = 'Virginia' EXCEPT SELECT activity FROM event_log WHERE resource = 'Virginia' GROUP BY activity HAVING COUNT(*) = 0
+SELECT DISTINCT activity FROM event_log WHERE resource = 'Virginia' AND activity NOT IN ( SELECT activity FROM event_log WHERE resource = 'Virginia' )
+SELECT activity FROM event_log WHERE resource!= 'Virginia'
+SELECT activity FROM ( SELECT DISTINCT activity FROM event_log WHERE resource = 'Virginia' ) AS Virginia_activities LEFT JOIN ( SELECT DISTINCT activity FROM event_log ) AS all_activities ON Virginia_activities.activity = all_activities.activity WHERE all_activities.activity IS NULL
+SELECT DISTINCT activity FROM event_log WHERE resource!= 'Virginia' ORDER BY activity;
+SELECT activity FROM ( SELECT DISTINCT activity FROM event_log ) AS all_activities WHERE activity NOT IN ( SELECT activity FROM event_log WHERE resource = 'Virginia' );
+SELECT AVG(cost) FROM event_log WHERE activity LIKE '%rejected%'
+SELECT AVG(cost) FROM event_log WHERE activity ='rejected'
+SELECT AVG(total_cost) FROM ( SELECT idcase, SUM(cost) as total_cost FROM event_log WHERE activity ='rejected' GROUP BY idcase ) AS cases_with_rejected
+SELECT AVG(cost) FROM event_log WHERE activity LIKE '%rejected%' GROUP BY idcase;
+SELECT AVG(cost) FROM event_log WHERE activity LIKE '%rejected%'
+SELECT AVG(cost) FROM event_log WHERE activity = 'REJECTED'
+SELECT AVG(cost) FROM event_log WHERE activity = 'REJECTED'
+SELECT e1.idcase, TIMESTAMPDIFF(SECOND, (SELECT MIN(timestamp) FROM event_log WHERE idcase = e1.idcase), (SELECT MAX(timestamp) FROM event_log WHERE activity = 'Declaration approved by supervisor' AND idcase = e1.idcase) ) AS duration FROM event_log e1 WHERE e1.activity = 'Declaration approved by supervisor' GROUP BY e1.idcase
+SELECT e1.idcase, TIMESTAMPDIFF(SECOND, e2.timestamp, e3.timestamp) AS duration FROM event_log e1 INNER JOIN (SELECT idcase, MIN(timestamp) as timestamp FROM event_log GROUP BY idcase order by timestamp) AS e2 ON e1.idcase=e2.idcase INNER JOIN (SELECT idcase, MAX(timestamp) as timestamp FROM event_log GROUP BY idcase order by timestamp) AS e3 ON e1.idcase=e3.idcase WHERE e1.activity = 'Declaration rejected by supervisor' ORDER BY e2.timestamp;
+SELECT idcase, TIMESTAMPDIFF(SECOND, (SELECT MIN(timestamp) FROM event_log WHERE idcase = e1.idcase AND activity = 'Declaration approved by supervisor'), (SELECT MAX(timestamp) FROM event_log WHERE idcase = e1.idcase AND activity = 'Declaration approved by supervisor')) AS duration FROM event_log e1 WHERE activity = 'Declaration approved by supervisor' GROUP BY idcase
+SELECT idcase, TIMESTAMPDIFF(SECOND, (SELECT MIN(timestamp) FROM event_log WHERE activity = 'Declaration approved by supervisor' AND idcase = e1.idcase), (SELECT MAX(timestamp) FROM event_log WHERE activity = 'Declaration approved by supervisor' AND idcase = e1.idcase)) AS duration FROM event_log e1 WHERE activity = 'Declaration approved by supervisor' GROUP BY idcase
+SELECT idcase, TIMESTAMPDIFF(SECOND, (SELECT MIN(timestamp) FROM event_log WHERE activity = 'Declaration approved by supervisor' AND idcase = e1.idcase), (SELECT MAX(timestamp) FROM event_log WHERE activity = 'Declaration approved by supervisor' AND idcase = e1.idcase)) AS duration FROM event_log e1 WHERE activity = 'Declaration approved by supervisor' GROUP BY idcase
+SELECT AVG(e1.cost) AS avg_cost FROM event_log e1 INNER JOIN event_log e2 ON e1.idcase = e2.idcase AND e1.timestamp < e2.timestamp WHERE e2.activity = 'Declaration final approved by director';
+SELECT e1.idcase, strftime('%s', e2.timestamp) - strftime('%s', e1.timestamp) as 'Wait time' FROM event_log e1 INNER JOIN (SELECT idcase, MIN(timestamp) as timestamp FROM event_log WHERE activity = 'Declaration approved by supervisor' GROUP BY idcase) e2 ON e1.idcase = e2.idcase AND e1.activity = 'Declaration submitted' ORDER BY e1.idcase;
+SELECT COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by pre-approver'
+SELECT COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by pre-approver';
+SELECT count(*), resource FROM (SELECT resource, MIN(timestamp) FROM event_log where activity = 'Declaration rejected by pre-approver' GROUP by resource, idcase) GROUP by resource
+SELECT resource, COUNT(*) as count FROM (SELECT resource, MIN(timestamp) as first_occurrence FROM event_log WHERE activity = 'Declaration rejected by pre-approver' GROUP BY resource, idcase) as first_occurrences GROUP BY resource
+SELECT count(*), resource FROM (SELECT resource, MIN(timestamp) FROM event_log WHERE activity = 'Declaration rejected by pre-approver' GROUP by resource, idcase) GROUP by resource
+SELECT COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by pre-approver';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by pre-approver'
+SELECT COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by pre-approver'
+SELECT e1.activity, e1.resource, e1.idcase FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp
+SELECT idcase, timestamp, resource FROM event_log WHERE activity = 'End trip' ORDER BY resource, timestamp;
+select e1.activity, e1.resource, e1.idcase from event_log AS e1 inner join event_log AS e2 on e1.idcase = e2.idcase WHERE e2.activity = 'End trip' and e1.timestamp > e2.timestamp
+SELECT e1.idcase, e1.timestamp, e1.resource FROM event_log AS e1 WHERE e1.activity = 'End trip' ORDER BY e1.resource;
+SELECT e1.idcase, e1.resource, e1.timestamp FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' ORDER BY e1.resource;
+SELECT e2.idcase, e2.timestamp FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' ORDER BY e2.resource
+SELECT COUNT(*), idcase FROM event_log GROUP BY idcase
+SELECT count(*), idcase FROM event_log group by idcase
+SELECT COUNT(*) AS num_events, idcase FROM event_log GROUP BY idcase;
+SELECT count(*), idcase FROM event_log group by idcase
+SELECT idcase, COUNT(*) as events_count FROM event_log GROUP BY idcase
+SELECT COUNT(*), idcase FROM event_log GROUP BY idcase
+SELECT COUNT(*), idcase FROM event_log GROUP BY idcase
+SELECT COUNT(*) as num_interventions, idcase FROM event_log GROUP BY idcase
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2017-05-02' AND '2017-05-12';
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2017-05-02' AND '2017-05-12'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2017-05-02' AND '2017-05-12'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2017-05-02 00:00:00' AND '2017-05-12 23:59:59'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2017-02-05' AND '2017-12-05';
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2017-02-05' AND '2017-12-05';
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2017-05-02' AND '2017-05-12';
+SELECT COUNT(*) FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2017-05-02' AND '2017-05-12' GROUP BY idcase
+SELECT e1.idcase, e1.resource, e1.id, e1.timestamp FROM event_log AS e1 WHERE e1.activity = 'Send reminder' ORDER BY e1.timestamp;
+SELECT e1.idcase, e1.resource, e1.id, e1.timestamp FROM event_log AS e1 WHERE e1.activity = 'Send reminder' ORDER BY e1.timestamp;
+select distinct(e1.activity) from event_log AS e1 inner join event_log AS e2 on e1.idcase = e2.idcase WHERE e2.activity = 'Send reminder' and e1.timestamp < e2.timestamp group by e1.idcase, e1.activity
+SELECT e1.idcase, e1.resource, e1.activity, e1.timestamp AS completion_date FROM event_log AS e1 WHERE e1.activity = 'Send reminder' ORDER BY e1.timestamp;
+SELECT e1.idcase, e1.id, e1.resource, e1.timestamp FROM event_log AS e1 WHERE e1.activity = 'Send reminder' ORDER BY e1.timestamp;
+SELECT e1.idcase, e1.resource, e1.id, e1.timestamp FROM event_log AS e1 WHERE e1.activity = 'Send reminder' ORDER BY e1.timestamp;
+SELECT e1.idcase AS "Declaration Code", e1.resource AS "Resource", e1.id AS "Submission ID", e2.timestamp AS "Completion Date" FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'Send reminder' AND e1.timestamp < e2.timestamp ORDER BY e2.timestamp DESC;
+SELECT DISTINCT resource FROM event_log ORDER BY resource ASC
+SELECT DISTINCT resource FROM event_log ORDER BY resource ASC
+SELECT DISTINCT resource FROM event_log ORDER BY resource ASC;
+SELECT DISTINCT resource FROM event_log ORDER BY resource ASC;
+SELECT DISTINCT resource FROM event_log ORDER BY resource;
+SELECT DISTINCT resource FROM event_log ORDER BY resource ASC;
+SELECT DISTINCT resource AS employee_name FROM event_log ORDER BY employee_name ASC;
+SELECT resource FROM event_log GROUP BY resource HAVING COUNT(DISTINCT idcase) > 200
+SELECT resource, COUNT(DISTINCT idcase) AS num_instances FROM event_log GROUP BY resource HAVING COUNT(DISTINCT idcase) > 200
+SELECT resource, COUNT(*) AS count FROM event_log GROUP BY resource HAVING COUNT(*) > 200
+SELECT resource FROM event_log GROUP BY resource HAVING COUNT(DISTINCT idcase) > 200;
+SELECT resource FROM event_log GROUP BY resource HAVING COUNT(idcase) > 200
+SELECT DISTINCT resource FROM event_log GROUP BY resource HAVING COUNT(*) > 200;
+SELECT resource, COUNT(*) as num_declarations FROM event_log GROUP BY resource HAVING COUNT(*) > 200
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log WHERE activity LIKE '%declaration%'
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT COUNT(DISTINCT resource) FROM event_log
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%declaration%';
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%declaration%';
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%declaration%';
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%declaration%'
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%declaration%';
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%declaration%';
+SELECT DISTINCT activity FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log WHERE activity LIKE '%declaration%' ) ORDER BY activity;
+SELECT * FROM event_log WHERE activity LIKE '%declaration%'
+SELECT activity, AVG(cost) AS mean_cost FROM event_log GROUP BY activity
+SELECT activity, AVG(cost) AS average_cost FROM event_log GROUP BY activity
+SELECT activity, AVG(cost) AS average_cost FROM event_log GROUP BY activity;
+SELECT activity, AVG(cost) AS mean_cost FROM event_log GROUP BY activity
+SELECT AVG(cost) AS mean_cost, activity FROM event_log GROUP BY activity
+SELECT activity, AVG(cost) AS average_cost FROM event_log GROUP BY activity
+SELECT activity, AVG(cost) AS average_cost FROM event_log GROUP BY activity
+SELECT activity, AVG(cost) AS mean_cost FROM event_log GROUP BY activity
+SELECT activity, AVG(cost) AS average_cost FROM event_log GROUP BY activity
+SELECT COUNT(*) FROM event_log WHERE cost = 0;
+SELECT COUNT(*) FROM event_log WHERE cost IS NULL;
+SELECT COUNT(*) FROM event_log WHERE cost = 0;
+SELECT COUNT(*) FROM event_log WHERE cost = 0;
+SELECT COUNT(*) FROM event_log WHERE cost IS NULL;
+SELECT COUNT(DISTINCT idcase) AS num_cases FROM event_log WHERE cost IS NULL
+SELECT COUNT(*) as num_cases_without_cost FROM event_log GROUP BY idcase HAVING COUNT(CASE WHEN cost IS NULL THEN 1 ELSE NULL END) = COUNT(*)
+SELECT COUNT(*) FROM event_log WHERE cost IS NULL GROUP BY idcase;
+SELECT COUNT(*) FROM event_log WHERE cost = 0;
+SELECT activity FROM event_log WHERE activity LIKE '%permit%' OR activity LIKE '%declaration%';
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%Permit%' OR activity LIKE '%Declaration%';
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%permit%' OR activity LIKE '%declaration%';
+SELECT * FROM event_log WHERE activity LIKE '%Permit%';
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%permit%' OR activity LIKE '%declaration%'
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%permit%' OR activity LIKE '%declaration%';
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%permit%' OR activity LIKE '%declaration%'
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%permit%' OR activity LIKE '%declaration%'
+SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%Permit%' OR activity LIKE 'Declare%'
+SELECT count(*) FROM event_log WHERE activity = 'Declaration rejected by director';
+SELECT COUNT(*) FROM event_log WHERE activity LIKE 'declaration rejected by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by director'
+SELECT COUNT(*) FROM event_log WHERE activity = 'declaration rejected by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by director'
+SELECT AVG(cost) FROM event_log;
+SELECT AVG(cost) FROM event_log
+SELECT AVG(cost) FROM event_log
+SELECT AVG(cost) FROM event_log GROUP BY activity
+SELECT AVG(cost) FROM event_log
+SELECT AVG(cost) FROM event_log;
+SELECT AVG(cost) AS mean_cost, activity FROM event_log GROUP BY activity;
+SELECT AVG(cost) FROM event_log;
+SELECT AVG(cost) FROM event_log;
+SELECT AVG(cost) FROM event_log WHERE idcase IS NOT NULL
+SELECT resource, COUNT(DISTINCT idcase) FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) AS num_cases FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) FROM event_log GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) AS num_cases FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) FROM event_log GROUP BY resource
+SELECT resource, count(distinct idcase) FROM event_log group by resource
+SELECT resource, COUNT(DISTINCT idcase) AS num_declarations FROM event_log GROUP BY resource
+SELECT COUNT(*) FROM event_log WHERE resource = 'Peter';
+SELECT count(*) FROM event_log WHERE resource = 'Peter'
+SELECT count(*) FROM event_log WHERE resource = 'Peter'
+SELECT count(*) FROM event_log WHERE resource = 'Peter'
+SELECT resource FROM event_log GROUP BY resource HAVING COUNT(DISTINCT idcase) > 3
+SELECT DISTINCT resource FROM event_log GROUP BY resource HAVING COUNT(*) > 3;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 3
+SELECT DISTINCT resource FROM event_log GROUP BY resource HAVING COUNT(DISTINCT idcase) > 3;
+SELECT DISTINCT resource FROM event_log GROUP BY resource HAVING COUNT(DISTINCT idcase) > 3
+SELECT COUNT(DISTINCT idcase) AS num_cases, resource FROM event_log GROUP BY resource HAVING COUNT(DISTINCT idcase) > 3
+SELECT idcase, COUNT(*) as num_events FROM event_log WHERE activity = 'Request payment' GROUP BY idcase ORDER BY num_events ASC;
+SELECT idcase, COUNT(*) as num_events FROM event_log WHERE activity = 'Request payment' GROUP BY idcase ORDER BY num_events ASC;
+SELECT idcase, COUNT(*) as num_events FROM event_log WHERE activity LIKE '%request payment%' GROUP BY idcase ORDER BY num_events ASC;
+SELECT idcase, COUNT(*) as num_events FROM event_log WHERE activity ='request payment' GROUP BY idcase ORDER BY num_events ASC;
+SELECT idcase, COUNT(*) as num_events FROM event_log WHERE activity = 'Request payment' GROUP BY idcase ORDER BY num_events ASC;
+SELECT idcase, COUNT(*) as num_events FROM event_log WHERE activity = 'Request payment' GROUP BY idcase ORDER BY num_events ASC;
+SELECT idcase, COUNT(*) as num_activities FROM event_log WHERE activity = 'Request payment' GROUP BY idcase ORDER BY num_activities ASC;
+SELECT idcase, COUNT(*) as num_actions FROM event_log WHERE activity = 'Request payment' GROUP BY idcase ORDER BY num_actions;
+SELECT DISTINCT timestamp FROM event_log WHERE activity = 'End trip' OR activity = 'Declaration rejected by employee' ORDER BY timestamp;
+SELECT DISTINCT timestamp FROM event_log WHERE activity = 'End trip' OR activity = 'Declaration rejected by employee' ORDER BY timestamp;
+SELECT DISTINCT timestamp FROM event_log WHERE activity = 'End trip' OR activity = 'Declaration rejected by employee' ORDER BY timestamp;
+SELECT DISTINCT timestamp FROM event_log WHERE activity = 'End trip' OR activity = 'Declaration rejected by employee' ORDER BY timestamp;
+SELECT timestamp FROM event_log WHERE activity = 'end trip' OR activity = 'closed' ORDER BY timestamp;
+SELECT DISTINCT strftime('%Y-%m-%d', timestamp) AS date FROM event_log WHERE activity = 'End trip' OR activity = 'Declaration rejected by employee' ORDER BY date;
+SELECT DISTINCT timestamp FROM event_log WHERE activity IN ('End trip', 'Reject declaration') ORDER BY timestamp;
+SELECT DISTINCT timestamp FROM event_log WHERE activity IN ('End trip', 'Declaration rejected') ORDER BY timestamp;
+SELECT resource, COUNT(*) AS occurrences FROM event_log GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) AS num_performances FROM event_log GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) AS num_performances FROM event_log GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) AS num_activities FROM event_log GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) as activity_count FROM event_log GROUP BY resource ORDER BY resource;
+SELECT COUNT(*), resource FROM event_log GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) AS occurrences FROM event_log GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) FROM event_log GROUP BY resource ORDER BY resource ASC;
+SELECT resource, COUNT(*) as activity_occurrences FROM event_log GROUP BY resource ORDER BY resource ASC;
+SELECT resource, COUNT(*) as total_declarations FROM event_log WHERE activity LIKE '%Declaration%' GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) AS action_count FROM event_log GROUP BY resource ORDER BY resource;
+SELECT * FROM event_log WHERE activity LIKE 'E%'
+SELECT * FROM event_log WHERE activity LIKE 'E%'
+SELECT * FROM event_log WHERE activity LIKE 'E%';
+SELECT * FROM event_log WHERE activity LIKE 'E%';
+SELECT * FROM event_log WHERE activity LIKE 'E%'
+SELECT * FROM event_log WHERE activity LIKE 'E%';
+SELECT activity FROM event_log WHERE activity LIKE 'E%' AND activity LIKE '%declaration%';
+SELECT * FROM event_log WHERE activity LIKE 'E%';
+SELECT id, activity, resource, cost FROM event_log WHERE cost BETWEEN 50 AND 400;
+SELECT id, activity, resource, cost FROM event_log WHERE cost BETWEEN 50 AND 400;
+SELECT id, activity, resource, cost FROM event_log WHERE cost BETWEEN 50 AND 400;
+SELECT id, activity, resource, cost FROM event_log WHERE cost BETWEEN 50 AND 400 ORDER BY cost;
+SELECT id, activity, resource, cost FROM event_log WHERE cost BETWEEN 50 AND 400
+SELECT id, activity, resource, cost FROM event_log WHERE cost BETWEEN 50 AND 400
+SELECT id, activity, resource, cost FROM event_log WHERE cost BETWEEN 50 AND 400;
+SELECT id, activity, resource, cost FROM event_log WHERE cost BETWEEN 50 AND 400 ORDER BY cost;
+SELECT idcase, activity, resource, cost FROM event_log WHERE cost BETWEEN 50 AND 400 ORDER BY cost;
+SELECT DISTINCT resource FROM event_log WHERE activity = 'Declaration saved by employee'
+SELECT DISTINCT resource FROM event_log WHERE activity = 'Declaration saved by employee';
+SELECT DISTINCT resource FROM event_log WHERE activity ='saved declaration';
+SELECT DISTINCT resource FROM event_log WHERE activity = 'Declaration saved by employee'
+SELECT activity FROM event_log WHERE strftime('%Y-%m-%d', timestamp) = '2018-04-12'
+SELECT * FROM event_log WHERE activity = 'End trip' AND strftime('%Y-%m-%d', timestamp) = '2018-04-12';
+SELECT activity FROM event_log WHERE timestamp = '2018-04-12'
+SELECT activity FROM event_log WHERE strftime('%Y-%m-%d', timestamp) = '2018-04-12'
+SELECT DISTINCT activity FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log WHERE strftime('%Y-%m-%d', timestamp) = '2018-04-12' )
+SELECT DISTINCT activity FROM event_log WHERE activity = 'End trip' AND strftime('%Y-%m-%d', timestamp) = '2018-04-12';
+SELECT DISTINCT activity FROM event_log WHERE strftime('%Y-%m-%d', timestamp) = '2018-04-12' AND activity = 'End trip';
+SELECT activity FROM event_log WHERE activity = 'End trip' AND strftime('%Y-%m-%d', timestamp) = '2018-04-12'
+SELECT activity FROM event_log WHERE timestamp = '2018-04-12'
+SELECT id, activity, timestamp AS "performance end date" FROM event_log WHERE activity = 'Permit final approved by supervisor' OR activity = 'Declaration approved by supervisor' ORDER BY timestamp;
+SELECT id, activity, timestamp AS end_date FROM event_log WHERE activity = 'Permit final approved by supervisor' OR activity = 'Declaration final approved by supervisor' ORDER BY timestamp;
+SELECT id, activity, timestamp AS end_date FROM event_log WHERE activity = 'Permit final approved by supervisor' OR activity = 'Declaration final approved by supervisor' ORDER BY timestamp;
+SELECT id, activity, timestamp FROM event_log WHERE activity IN ('Permit final approved by supervisor', 'Declaration final approved by supervisor') ORDER BY timestamp DESC;
+SELECT id, activity, timestamp AS end_date FROM event_log WHERE activity IN ('Permit final approved by supervisor', 'Declaration approved by supervisor') ORDER BY timestamp DESC;
+SELECT id, activity, timestamp as end_date FROM event_log WHERE activity IN ('Permit final approved by supervisor', 'Declaration approved by supervisor') ORDER BY timestamp DESC;
+SELECT id, activity, timestamp AS performance_end_date FROM event_log WHERE activity IN ('Declaration final approved by supervisor', 'Permit final approved by director') AND resource ='supervisor' ORDER BY timestamp DESC;
+SELECT id, activity, MAX(timestamp) AS completion_date FROM event_log WHERE activity LIKE '%final approved by director%' OR activity LIKE '%approved by supervisor%' GROUP BY id, activity ORDER BY MAX(timestamp) DESC;
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT * FROM event_log WHERE cost IS NOT NULL;
+SELECT idcase, activity, cost FROM event_log WHERE cost!= 0
+SELECT COUNT(*) FROM event_log WHERE activity = 'permit final approved by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'permit final approved by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Permit final approved by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Permit final approved by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Permit final approved by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'permit final approved by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Permit final approved by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Permit final approved by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'permit final approved by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'permit final approved by a director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Permit final approved by director';
+SELECT COUNT(*) FROM event_log WHERE activity = 'Permit approved by director' If the activity name is not present in the event_log table, the query will return 0.
+SELECT * FROM event_log WHERE activity = 'Start trip' AND resource LIKE '%s';
+SELECT timestamp FROM event_log WHERE activity = 'Start trip' AND resource LIKE '%s';
+SELECT timestamp FROM event_log WHERE activity = 'Start trip' AND resource LIKE '%s';
+SELECT * FROM event_log WHERE activity = 'Start trip' AND resource LIKE '%s';
+SELECT * FROM event_log WHERE activity = 'Start trip' AND resource LIKE '%s';
+SELECT * FROM event_log WHERE activity = 'Start trip' AND resource LIKE '%s';
+SELECT * FROM event_log WHERE activity = 'Start trip' AND resource LIKE '%s';
+SELECT * FROM event_log WHERE activity = 'Start trip' AND resource LIKE '%s';
+SELECT DISTINCT strftime('%Y-%m-%d', timestamp) AS date FROM event_log WHERE activity = 'Start trip' AND resource LIKE '%s';
+SELECT DISTINCT strftime('%Y-%m-%d', timestamp) AS date FROM event_log WHERE activity = 'Start trip' AND resource LIKE '%s';
+SELECT SUM(cost), activity, resource FROM event_log GROUP BY activity, resource
+SELECT SUM(cost) AS total_cost, activity, resource FROM event_log GROUP BY activity, resource
+SELECT SUM(cost) FROM event_log GROUP BY activity, resource
+SELECT activity, resource, SUM(cost) AS total_cost FROM event_log GROUP BY activity, resource
+SELECT activity, resource, SUM(cost) AS total_cost FROM event_log GROUP BY activity, resource ORDER BY total_cost DESC;
+SELECT SUM(cost), activity, resource FROM event_log GROUP BY activity, resource
+SELECT SUM(cost), activity, resource FROM event_log GROUP BY activity, resource
+SELECT resource, activity, SUM(cost) AS total_cost FROM event_log GROUP BY resource, activity ORDER BY total_cost DESC;
+select count(*), e1.idcase from event_log AS e1 inner join event_log AS e2 on e1.idcase = e2.idcase WHERE e2.activity = 'End trip' and e1.timestamp < e2.timestamp group by e1.idcase
+SELECT COUNT(CASE WHEN activity ='start trip' THEN 1 ELSE NULL END) AS start_trip_count, COUNT(CASE WHEN activity = 'end trip' THEN 1 ELSE NULL END) AS end_trip_count FROM event_log;
+select count(*), e1.idcase from event_log AS e1 inner join event_log AS e2 on e1.idcase = e2.idcase WHERE e2.activity = 'End trip' and e1.timestamp < e2.timestamp group by e1.idcase
+SELECT COUNT(*) as total_events, SUM(CASE WHEN activity = 'Start trip' THEN 1 ELSE 0 END) as start_trip_events, SUM(CASE WHEN activity = 'End trip' THEN 1 ELSE 0 END) as end_trip_events FROM event_log
+SELECT activity, COUNT(*) FROM event_log WHERE activity IN ('Start trip', 'End trip') GROUP BY activity;
+SELECT COUNT(*) FROM event_log WHERE activity IN ('start trip', 'end trip')
+SELECT activity, COUNT(*) as count FROM event_log GROUP BY activity;
+SELECT activity, COUNT(*) AS count FROM event_log WHERE activity IN ('start trip', 'end trip') GROUP BY activity
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity IN ('Begin trip', 'End trip')
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity IN ('Start trip', 'End trip')
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 3
+SELECT DISTINCT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 3;
+SELECT DISTINCT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 3;
+SELECT DISTINCT activity FROM event_log GROUP BY activity HAVING COUNT(activity) > 3;
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 3
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 3
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 3;
+SELECT DISTINCT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 3;
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 3
+SELECT activity, COUNT(*) as count FROM event_log GROUP BY activity HAVING COUNT(*) > 3;
+SELECT activity, resource FROM event_log ORDER BY timestamp DESC LIMIT 1;
+SELECT MAX(timestamp), activity, resource FROM event_log GROUP BY activity, resource ORDER BY timestamp DESC
+SELECT activity, resource FROM event_log ORDER BY timestamp DESC LIMIT 1;
+SELECT activity, resource FROM event_log ORDER BY timestamp DESC LIMIT 1;
+SELECT activity, resource FROM event_log ORDER BY timestamp DESC LIMIT 1;
+SELECT activity, resource FROM event_log ORDER BY timestamp DESC LIMIT 1;
+SELECT activity, resource FROM event_log ORDER BY timestamp DESC LIMIT 1;
+SELECT resource, activity FROM event_log ORDER BY timestamp DESC LIMIT 1;
+SELECT resource, activity FROM event_log ORDER BY timestamp DESC LIMIT 1;
+SELECT e1.activity, e1.resource, e1.timestamp FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp ORDER BY e1.idcase, e1.timestamp;
+SELECT e1.idcase, e1.resource FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp ORDER BY e1.resource;
+SELECT e1.idcase, e1.resource, e1.timestamp FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp ORDER BY e1.resource;
+SELECT e1.idcase, e1.resource, e1.timestamp FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp ORDER BY e1.resource;
+SELECT el1.idcase, el1.timestamp, el1.resource FROM event_log el1 JOIN event_log el2 ON el1.idcase = el2.idcase AND el1.timestamp < el2.timestamp WHERE el1.activity = 'End trip' AND el2.activity!= 'End trip' ORDER BY el1.resource;
+SELECT e1.idcase, e1.activity, e1.resource, e1.timestamp FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp ORDER BY e1.idcase, e1.timestamp;
+SELECT e1.idcase, e1.resource FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp ORDER BY e1.resource;
+SELECT e1.idcase, e1.resource FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp
+SELECT el1.id, el1.activity, el1.timestamp, el1.resource FROM event_log el1 JOIN event_log el2 ON el1.idcase = el2.idcase AND el1.timestamp < el2.timestamp WHERE el1.activity = 'End trip' AND el2.activity!= 'End trip' ORDER BY el1.resource;
+SELECT el1.id, el1.activity, el1.timestamp, el1.resource, el2.id AS next_end_trip_id FROM event_log el1 JOIN event_log el2 ON el1.idcase = el2.idcase AND el1.id < el2.id WHERE el1.activity = 'End trip' AND el2.activity = 'End trip' ORDER BY el1.id;
+SELECT e1.idcase, e1.activity, e1.resource, e1.timestamp FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp ORDER BY e1.idcase, e1.timestamp;
+SELECT e1.activity, e1.resource, e1.timestamp FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp ORDER BY e1.idcase, e1.timestamp;
+SELECT e1.idcase, e1.activity, e1.resource FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp ORDER BY e1.idcase;
+SELECT e1.idcase, e1.timestamp, e1.resource FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase AND e1.timestamp > e2.timestamp WHERE e2.activity = 'End trip' ORDER BY e1.idcase, e1.timestamp;
+SELECT e1.idcase, e1.timestamp, e1.resource FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp ORDER BY e1.idcase;
+SELECT el1.idcase, el1.activity, el1.resource FROM event_log el1 WHERE el1.timestamp > ( SELECT MIN(timestamp) FROM event_log el2 WHERE el2.idcase = el1.idcase AND el2.activity = 'End trip' ) ORDER BY el1.idcase, el1.timestamp, el1.resource;
+SELECT idcase, activity, resource FROM event_log WHERE activity!= 'End trip' AND idcase IN ( SELECT idcase FROM event_log WHERE activity = 'End trip' ) ORDER BY idcase, resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) AS num_events FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) AS non_end_trip_events FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) AS num_events FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, SUM(CASE WHEN activity!= 'End trip' THEN 1 ELSE 0 END) AS non_end_trip_events FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) AS non_end_trip_events FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) AS non_end_trip_events FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, SUM(CASE WHEN activity!= 'End trip' THEN 1 ELSE 0 END) AS events_amount FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) AS non_end_trip_events FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT COUNT(*) FROM event_log WHERE activity NOT LIKE 'End trip' AND resource IN ( SELECT resource FROM event_log GROUP BY resource HAVING COUNT(*) > 1 )
+SELECT COUNT(*), resource FROM event_log WHERE activity!= 'End trip' GROUP BY resource
+SELECT idcase FROM event_log GROUP BY idcase ORDER BY MIN(timestamp) DESC;
+SELECT idcase FROM event_log ORDER BY timestamp DESC GROUP BY idcase
+SELECT idcase FROM event_log GROUP BY idcase ORDER BY MIN(timestamp) DESC;
+SELECT idcase, MIN(timestamp) as start_date FROM event_log GROUP BY idcase ORDER BY start_date DESC;
+SELECT idcase, MIN(timestamp) as timestamp FROM event_log GROUP BY idcase ORDER BY timestamp;
+SELECT idcase FROM event_log ORDER BY timestamp ASC
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Request payment'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Request payment';
+SELECT DISTINCT e.idcase FROM event_log AS e WHERE e.activity!= 'Request payment' ORDER BY e.timestamp DESC LIMIT 10;
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Request payment'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Request payment'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Request payment'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Request payment'
+SELECT idcase FROM event_log WHERE activity = 'Declaration final approved by director' ORDER BY timestamp DESC LIMIT 1;
+SELECT idcase, timestamp FROM event_log WHERE activity = 'Declaration final approved by director' ORDER BY timestamp DESC LIMIT 1;
+SELECT idcase FROM event_log WHERE activity = 'Declaration final approved by director' ORDER BY timestamp DESC LIMIT 1;
+SELECT idcase FROM event_log WHERE activity = 'Declaration final approved by director' ORDER BY timestamp DESC LIMIT 1;
+SELECT idcase FROM event_log WHERE activity = 'Declaration final approved by director' ORDER BY timestamp DESC LIMIT 1;
+SELECT idcase FROM event_log WHERE activity = 'Declaration final approved by director' ORDER BY timestamp DESC LIMIT 1;
+SELECT idcase, timestamp FROM event_log WHERE activity = 'Declaration final approved by director' ORDER BY timestamp DESC LIMIT 1;
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource ORDER BY count DESC LIMIT 1;
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource ORDER BY count DESC LIMIT 1;
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource ORDER BY count DESC LIMIT 1;
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource ORDER BY count DESC LIMIT 1;
+SELECT resource, COUNT(*) as total_events FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource ORDER BY total_events DESC LIMIT 1;
+SELECT resource, COUNT(*) as count FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource ORDER BY count DESC LIMIT 1;
+SELECT resource FROM event_log WHERE activity = 'Declaration approved by administration' GROUP BY resource ORDER BY COUNT(*) DESC LIMIT 1;
+SELECT resource, COUNT(*) FROM event_log WHERE activity = (SELECT MIN(activity) FROM event_log) GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE id = (SELECT MIN(id) FROM event_log WHERE idcase IS NOT NULL) GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity = (SELECT activity FROM event_log WHERE idcase = (SELECT MIN(idcase) FROM event_log) ORDER BY id LIMIT 1) GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE id = (SELECT MIN(id) FROM event_log GROUP BY idcase) GROUP BY resource
+SELECT resource, COUNT(CASE WHEN ROW_NUMBER() OVER (PARTITION BY idcase ORDER BY timestamp) = 1 THEN 1 ELSE NULL END) AS first_to_act FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) as first_action_count FROM event_log WHERE id = (SELECT MIN(id) FROM event_log WHERE activity = 'Declaration saved by employee' GROUP BY resource) GROUP BY resource
+SELECT resource, COUNT(DISTINCT idcase) as num_processes FROM event_log GROUP BY resource
+SELECT count(*) FROM event_log WHERE activity LIKE '%approved%'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE '%approved%';
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE '%approved%'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE '%approved%'
+SELECT COUNT(*) FROM event_log WHERE activity LIKE '%approved%'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE '%approved%'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE '%approved%';
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE '%approval%'
+SELECT DATE(timestamp) AS date, COUNT(*) AS count FROM event_log WHERE activity LIKE '%rejected%' GROUP BY DATE(timestamp)
+SELECT DATE(timestamp) AS date, COUNT(DISTINCT idcase) AS cases FROM event_log WHERE activity LIKE '%rejected%' GROUP BY DATE(timestamp) ORDER BY date;
+SELECT DATE(timestamp) AS date, COUNT(*) AS count FROM event_log WHERE activity LIKE '%rejected%' GROUP BY DATE(timestamp) ORDER BY date;
+SELECT DATE(timestamp) AS date, COUNT(DISTINCT idcase) AS cases_per_day FROM event_log WHERE activity LIKE '%rejected%' GROUP BY DATE(timestamp) ORDER BY date;
+SELECT DATE(timestamp) AS date, COUNT(DISTINCT idcase) AS num_cases FROM event_log WHERE activity LIKE '%rejected%' GROUP BY DATE(timestamp) ORDER BY date;
+SELECT DATE(timestamp) AS date, COUNT(*) AS count FROM event_log WHERE activity LIKE '%rejected%' GROUP BY DATE(timestamp) ORDER BY date;
+SELECT DATE(timestamp) AS date, COUNT(*) AS rejected_declarations FROM event_log WHERE activity LIKE '%rejected%' GROUP BY DATE(timestamp) ORDER BY date;
+SELECT DATE(timestamp) AS date, COUNT(DISTINCT idcase) AS num_declarations FROM event_log WHERE activity LIKE '%rejected%' GROUP BY DATE(timestamp) ORDER BY date;
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS duration, idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN ( SELECT COUNT(*) FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 5 ) ) GROUP BY idcase;
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS duration, idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN ( SELECT COUNT(*) FROM event_log GROUP BY idcase HAVING COUNT(*) >= 20 ORDER BY COUNT(*) DESC LIMIT 5 ) ) GROUP BY idcase;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN ( SELECT COUNT(*) FROM event_log GROUP BY idcase HAVING COUNT(*) >= 20 ORDER BY COUNT(*) DESC LIMIT 5 ) ORDER BY COUNT(*) DESC;
+SELECT idcase, strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS duration FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN ( SELECT COUNT(*) FROM event_log GROUP BY idcase HAVING COUNT(*) >= 20 ORDER BY COUNT(*) DESC LIMIT 5 ) ) GROUP BY idcase ORDER BY duration DESC LIMIT 5;
+SELECT idcase, SUM(TIMESTAMPDIFF(SECOND, MIN(timestamp), MAX(timestamp))) AS total_duration FROM event_log GROUP BY idcase ORDER BY total_duration DESC LIMIT 5;
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)), idcase FROM event_log WHERE idcase IN (SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN (SELECT COUNT(*) FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 5)) GROUP BY idcase;
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS duration, idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN ( SELECT COUNT(*) FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 5 ) ) GROUP BY idcase ORDER BY duration DESC;
+SELECT idcase, strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS processing_time, COUNT(*) AS num_actions FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN ( SELECT COUNT(*) FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 5 ) ) GROUP BY idcase ORDER BY num_actions DESC;
+SELECT idcase, strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS duration FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN ( SELECT COUNT(*) FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 5 ) ) GROUP BY idcase ORDER BY duration DESC;
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS duration, idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN ( SELECT COUNT(*) FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 5 ) AND COUNT(*) >= 20 ) GROUP BY idcase
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS duration, idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) IN ( SELECT COUNT(*) FROM event_log GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 5 ) ) GROUP BY idcase
+SELECT idcase, SUM(TIMESTAMPDIFF(SECOND, MIN(timestamp), MAX(timestamp))) AS duration FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 20 ) GROUP BY idcase ORDER BY COUNT(*) DESC LIMIT 5;
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)), idcase FROM event_log WHERE idcase IN (SELECT idcase FROM event_log GROUP BY idcase HAVING count(*) > 20) GROUP BY idcase ORDER BY strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) DESC LIMIT 5;
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) AS duration, idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) >= 20 ORDER BY COUNT(*) DESC LIMIT 5 ) GROUP BY idcase
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)), idcase FROM event_log WHERE idcase IN (SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) >= 20 ORDER BY COUNT(*) DESC LIMIT 5) GROUP BY idcase;
+select strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)), idcase FROM event_log where idcase in (select idcase from event_log group by idcase having count(*) IN (select count(*) from event_log group by idcase order by count(*) desc limit 5)) group by idcase
+SELECT strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)), idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 20 ) GROUP BY idcase ORDER BY strftime('%s', MAX(timestamp)) - strftime('%s', MIN(timestamp)) DESC LIMIT 5;
+SELECT idcase FROM event_log WHERE activity!= 'Request payment' AND activity!= 'Payment handled' ORDER BY timestamp DESC LIMIT 10;
+SELECT * FROM event_log WHERE activity NOT IN ('Request payment') ORDER BY timestamp DESC LIMIT 10;
+SELECT idcase, timestamp FROM event_log WHERE activity!= 'Request payment' AND activity!= 'Payment handled' ORDER BY timestamp DESC LIMIT 10;
+SELECT DISTINCT idcase FROM event_log WHERE activity!= 'Request payment' AND activity!= 'Payment handled' ORDER BY timestamp DESC LIMIT 10;
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' )
+SELECT idcase FROM event_log WHERE activity!= 'Request payment' ORDER BY timestamp DESC LIMIT 10;
+SELECT idcase FROM event_log WHERE idcase NOT IN (SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment') ORDER BY timestamp DESC LIMIT 10;
+SELECT idcase FROM event_log WHERE activity!= 'Request payment' ORDER BY timestamp DESC LIMIT 10;
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled') ORDER BY timestamp DESC LIMIT 10;
+SELECT idcase, timestamp FROM event_log WHERE idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled' ) ORDER BY timestamp DESC LIMIT 10;
+SELECT idcase FROM event_log WHERE idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' ) ORDER BY timestamp DESC LIMIT 10;
+SELECT * FROM event_log WHERE activity NOT IN ('Request payment', 'Payment handled') ORDER BY timestamp DESC LIMIT 10;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) <= 10
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) <= 10
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) <= 10
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) <= 10
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) <= 10
+SELECT idcase FROM event_log GROUP BY idcase HAVING count(*) <= 10
+SELECT idcase FROM event_log GROUP BY idcase HAVING count(*) <= 10
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) <= 10
+SELECT idcase FROM event_log GROUP BY idcase HAVING count(*) <= 10
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 3
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) >= 10
+SELECT idcase FROM event_log GROUP BY idcase HAVING count(*) <= 10
+SELECT AVG(cost) FROM event_log WHERE activity = 'payment handled' AND timestamp < '2018-01-01 00:00:00';
+SELECT AVG(cost) FROM event_log WHERE activity = 'payment handled' AND timestamp < '2018-01-01 00:00:00';
+SELECT AVG(cost) FROM event_log WHERE activity = 'payment handled' AND timestamp < '2018-01-01 00:00:00';
+SELECT AVG(cost) FROM event_log WHERE activity = 'payment handled' AND timestamp < '2018-01-01 00:00:00'
+SELECT AVG(cost) FROM event_log WHERE activity = 'Payment handled' AND timestamp < '2018-01-01'
+SELECT AVG(cost) FROM event_log WHERE activity = 'payment handled' AND timestamp < '2018-01-01 00:00:00'
+SELECT AVG(cost) FROM event_log WHERE activity LIKE '%payment handled%' AND timestamp < '2018-01-01 00:00:00'
+SELECT AVG(cost) FROM event_log WHERE activity = 'payment handled' AND timestamp < '2018-01-01 00:00:00'
+SELECT AVG(cost) FROM event_log WHERE timestamp < '2018-01-01'
+SELECT idcase, COUNT(*) as permit_count FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase
+SELECT idcase, COUNT(*) as permit_count FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase
+SELECT idcase, COUNT(*) as permit_count FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase
+SELECT idcase, COUNT(*) as permit_count FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase
+SELECT idcase, COUNT(*) as num_events FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase
+SELECT idcase, COUNT(*) as permit_activity_count FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase
+SELECT idcase, COUNT(*) AS permit_count FROM event_log WHERE activity LIKE '%Permit%' GROUP BY idcase ORDER BY permit_count DESC;
+SELECT idcase, COUNT(*) AS num_events FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase
+SELECT idcase, count(*) as permit_count FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase
+SELECT idcase, count(*) as permit_count FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource
+SELECT e1.idcase, e1.resource, COUNT(e1.idcase) as count FROM event_log e1 WHERE e1.activity = 'Declaration rejected by supervisor' GROUP BY e1.idcase, e1.resource ORDER BY e1.idcase, e1.resource;
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE activity = 'declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(DISTINCT idcase) AS num_cases, resource FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource
+SELECT resource, count(*) as rejection_count FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY resource ORDER BY rejection_count DESC;
+SELECT count(DISTINCT idcase), activity FROM event_log GROUP BY activity
+SELECT activity, count(DISTINCT idcase) as num_cases FROM event_log GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) AS num_cases FROM event_log GROUP BY activity
+SELECT count(DISTINCT idcase), activity FROM event_log GROUP BY activity
+SELECT COUNT(DISTINCT idcase), activity FROM event_log GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) FROM event_log GROUP BY activity;
+SELECT activity, COUNT(*) as declaration_count FROM event_log GROUP BY activity
+SELECT count(DISTINCT idcase), activity FROM event_log GROUP BY activity
+SELECT * FROM event_log WHERE activity LIKE 'R%' AND timestamp > ( SELECT MAX(timestamp) FROM event_log WHERE activity LIKE 'D%' );
+SELECT * FROM event_log WHERE activity LIKE 'R%' AND timestamp > ( SELECT MAX(timestamp) FROM event_log WHERE activity LIKE 'D%' )
+SELECT * FROM event_log WHERE activity LIKE 'R%' AND timestamp > ( SELECT MAX(timestamp) FROM event_log WHERE activity LIKE 'D%' )
+SELECT * FROM event_log WHERE activity LIKE 'R%' AND timestamp > ( SELECT MAX(timestamp) FROM event_log WHERE activity LIKE 'D%' )
+SELECT * FROM event_log WHERE activity LIKE 'R%' AND timestamp > (SELECT MAX(timestamp) FROM event_log WHERE activity LIKE 'D%')
+SELECT * FROM event_log WHERE activity LIKE 'R%' AND timestamp > (SELECT MAX(timestamp) FROM event_log WHERE activity LIKE 'D%')
+SELECT * FROM event_log WHERE activity LIKE 'R%' AND timestamp > (SELECT MAX(timestamp) FROM event_log WHERE activity LIKE 'D%')
+SELECT * FROM event_log WHERE activity LIKE 'R%' AND timestamp > (SELECT MAX(timestamp) FROM event_log WHERE activity LIKE 'D%')
+SELECT activity, resource, COUNT(*) as count FROM event_log GROUP BY activity, resource
+SELECT activity, resource, COUNT(*) as count FROM event_log GROUP BY activity, resource
+SELECT resource, activity, COUNT(*) AS count FROM event_log GROUP BY resource, activity
+SELECT activity, resource, COUNT(*) AS frequency FROM event_log GROUP BY activity, resource
+SELECT activity, resource, COUNT(*) AS frequency FROM event_log GROUP BY activity, resource
+SELECT activity, resource, COUNT(*) as count FROM event_log GROUP BY activity, resource
+SELECT resource, activity, COUNT(*) FROM event_log GROUP BY resource, activity
+SELECT DISTINCT activity FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2018-01-01' AND '2018-07-01'
+SELECT DISTINCT activity FROM event_log WHERE timestamp BETWEEN '2018-01-01' AND '2018-07-01';
+SELECT DISTINCT activity FROM event_log WHERE timestamp BETWEEN '2018-01-01' AND '2018-07-01'
+SELECT DISTINCT activity FROM event_log WHERE timestamp BETWEEN '2018-01-01' AND '2018-07-31';
+SELECT DISTINCT activity FROM event_log WHERE timestamp BETWEEN '2018-01-01' AND '2018-07-01'
+SELECT DISTINCT activity FROM event_log WHERE timestamp BETWEEN '2018-01-01' AND '2018-07-01'
+SELECT * FROM event_log WHERE timestamp BETWEEN '2018-01-01' AND '2018-06-30'
+SELECT idcase FROM event_log WHERE resource = 'Wayne' ORDER BY idcase
+SELECT idcase FROM event_log WHERE resource = 'Wayne' GROUP BY idcase ORDER BY idcase;
+SELECT idcase, resource FROM event_log WHERE resource = 'Wayne' ORDER BY idcase;
+SELECT idcase FROM event_log WHERE resource = 'Wayne' ORDER BY idcase;
+SELECT idcase FROM event_log WHERE resource = 'Wayne' GROUP BY idcase ORDER BY idcase;
+SELECT idcase FROM event_log WHERE resource = 'Wayne' ORDER BY timestamp;
+SELECT DISTINCT idcase FROM event_log where resource = 'Wayne' ORDER BY idcase;
+SELECT idcase FROM event_log WHERE resource = 'Wayne' ORDER BY idcase;
+SELECT idcase FROM event_log WHERE resource = 'Wayne' ORDER BY idcase;
+SELECT idcase FROM event_log WHERE resource = 'Wayne' ORDER BY idcase;
+SELECT activity, COUNT(DISTINCT idcase) AS num_cases FROM event_log WHERE strftime('%Y-%m-%d', timestamp) = '2018-03-12' GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) AS num_instances FROM event_log WHERE timestamp = DATE('2018-03-12') GROUP BY activity
+SELECT activity, COUNT(*) as count FROM event_log WHERE timestamp = '2018-03-12' AND idcase IS NOT NULL GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) AS num_cases FROM event_log WHERE timestamp <= '2018-03-12' AND activity!= 'End trip' GROUP BY activity ORDER BY num_cases DESC;
+SELECT activity, COUNT(DISTINCT idcase) AS num_cases FROM event_log WHERE timestamp = (SELECT MAX(timestamp) FROM event_log WHERE strftime('%Y-%m-%d', timestamp) = '2018-03-12') GROUP BY activity
+SELECT activity, COUNT(*) FROM event_log WHERE idcase IN (SELECT idcase FROM event_log GROUP BY idcase HAVING MAX(strftime('%Y-%m-%d', timestamp)) = '2018-03-12') GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) AS num_declarations FROM event_log WHERE timestamp <= '2018-03-12' AND timestamp >= '2018-03-12' GROUP BY activity
+SELECT activity, COUNT(*) FROM event_log WHERE timestamp BETWEEN '2018-03-12 00:00:00' AND '2018-03-12 23:59:59' GROUP BY activity
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE 'Permit%'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE 'Permit%'
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase;
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE 'Permit%' ORDER BY COUNT(DISTINCT idcase) DESC;
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE 'Permit%' ORDER BY 1;
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE 'permit%' ORDER BY COUNT(DISTINCT idcase) DESC;
+SELECT COUNT(*) FROM event_log WHERE activity LIKE 'Permit%';
+SELECT COUNT(*) FROM event_log WHERE activity LIKE 'Permit%' AND activity = (SELECT activity FROM event_log WHERE activity = 'Start trip');
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity LIKE 'Permit%' AND timestamp = (SELECT MIN(timestamp) FROM event_log WHERE idcase = event_log.idcase)
+SELECT DISTINCT idcase FROM event_log WHERE activity NOT IN ('request payment', 'payment handled')
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled')
+SELECT DISTINCT idcase FROM event_log WHERE activity NOT IN ('request payment', 'payment handled') ORDER BY idcase;
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' UNION SELECT idcase FROM event_log WHERE activity = 'Payment handled' )
+SELECT DISTINCT e.idcase FROM event_log AS e WHERE e.activity NOT IN ('Request payment', 'Payment handled') ORDER BY e.idcase;
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN ( SELECT DISTINCT idcase FROM event_log WHERE activity IN ('Request payment', 'Payment handled') )
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN ( SELECT idcase FROM event_log WHERE activity IN ('Request payment', 'Payment handled') );
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled')
+SELECT DISTINCT e.idcase FROM event_log AS e WHERE e.activity NOT IN ('Request payment', 'Payment handled') ORDER BY e.idcase;
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN ( SELECT DISTINCT idcase FROM event_log WHERE activity IN ('Request payment', 'Payment handled') )
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE idcase NOT IN (SELECT DISTINCT idcase FROM event_log where activity = 'Payment handled') AND idcase NOT IN (SELECT DISTINCT idcase FROM event_log where activity = 'Request payment')
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN ( SELECT DISTINCT idcase FROM event_log WHERE activity = 'Payment handled' ) AND idcase NOT IN ( SELECT DISTINCT idcase FROM event_log WHERE activity = 'Request payment' )
+SELECT timestamp, resource, activity FROM event_log WHERE activity IN ('start trip', 'declaration submitted by employee') ORDER BY timestamp, resource;
+SELECT * FROM event_log WHERE activity = 'Start trip' OR activity = 'Declaration submitted by employee' ORDER BY timestamp, resource;
+SELECT * FROM event_log WHERE activity IN ('Start trip', 'Declaration submitted by employee') ORDER BY timestamp, resource;
+SELECT * FROM event_log WHERE activity = 'Start trip' OR activity = 'Declaration submitted by employee' ORDER BY timestamp, resource;
+SELECT * FROM event_log WHERE activity = 'Start trip' OR activity = 'Declaration submitted by employee' ORDER BY timestamp, resource;
+SELECT * FROM event_log WHERE activity = 'Start trip' OR activity = 'Declaration submitted by employee' ORDER BY timestamp, resource;
+SELECT * FROM event_log WHERE activity = 'Start trip' OR activity = 'Declaration submitted by employee' ORDER BY timestamp, resource;
+SELECT * FROM event_log WHERE activity = 'Start trip' OR activity = 'Declaration submitted by employee' ORDER BY timestamp, resource;
+SELECT timestamp, resource, activity, idcase, cost FROM event_log WHERE activity IN ('Start trip', 'Declaration submitted by employee') ORDER BY timestamp, resource;
+SELECT e1.timestamp, e1.resource, e1.activity FROM event_log AS e1 WHERE e1.activity IN ('Initiate travel', 'Request declaration') ORDER BY e1.timestamp, e1.resource;
+SELECT e1.id, e1.activity, e1.resource, e1.timestamp FROM event_log AS e1 WHERE e1.activity IN ('Start trip', 'Request from employee') ORDER BY e1.timestamp, e1.resource;
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'declaration saved by employee' GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'declaration saved by employee' GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'declaration saved by employee' GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'declaration saved by employee' GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'declaration saved by employee' GROUP BY resource ORDER BY resource;
+select resource, count(*) from event_log where activity = 'Declaration submitted by employee' group by resource having count(*) > 2
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'declaration saved by employee' GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'declaration saved by employee' GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'declaration saved by employee' GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'Save declaration' GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(*) AS save_count FROM event_log WHERE activity ='save' GROUP BY resource ORDER BY resource;
+SELECT COUNT(DISTINCT idcase), activity FROM event_log GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) AS num_cases FROM event_log GROUP BY activity;
+SELECT activity, COUNT(DISTINCT idcase) AS num_cases FROM event_log GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) AS count_instances FROM event_log GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) FROM event_log GROUP BY activity
+SELECT COUNT(DISTINCT idcase), activity FROM event_log GROUP BY activity
+SELECT COUNT(DISTINCT idcase) as num_cases, activity FROM event_log GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) AS num_declarations FROM event_log GROUP BY activity
+SELECT COUNT(DISTINCT idcase), activity FROM event_log GROUP BY activity
+SELECT resource, COUNT(DISTINCT activity) AS num_activities FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT activity) AS num_activities FROM event_log GROUP BY resource ORDER BY resource;
+SELECT resource, COUNT(DISTINCT activity) AS num_activities FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT activity) FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT activity) FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT activity) FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT activity) AS num_activities FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT activity) AS num_actions FROM event_log GROUP BY resource
+SELECT resource, COUNT(DISTINCT activity) as distinct_actions FROM event_log GROUP BY resource
+SELECT resource, COUNT(*) as completion_occurrences FROM event_log WHERE activity IN ('End trip', 'payment handled') GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity IN ('End trip', 'Payment handled') GROUP BY resource
+SELECT resource, COUNT(*) as num_occurrences FROM event_log WHERE activity IN ('End trip', 'Payment handled') GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity IN ('end trip', 'payment handled') GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity IN ('end trip', 'payment handled') GROUP BY resource
+SELECT resource, COUNT(*) as completion_count FROM event_log WHERE activity IN ('end trip', 'payment handled') GROUP BY resource
+SELECT COUNT(*), resource FROM event_log WHERE activity IN ('end of trip', 'payment') GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity IN ('End trip', 'Make a payment') GROUP BY resource
+SELECT resource, idcase FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND id = (SELECT MIN(id) FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND idcase = event_log.idcase) GROUP BY resource, idcase
+SELECT resource, COUNT(*) AS num_cases FROM event_log WHERE activity = 'Declaration rejected by pre-approver' GROUP BY resource ORDER BY num_cases;
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND id = (SELECT MIN(id) FROM event_log WHERE activity = 'Declaration rejected by pre-approver') GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by pre-approver' GROUP BY resource
+SELECT resource, COUNT(*) FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND id = (SELECT MIN(id) FROM event_log WHERE activity = 'Declaration rejected by pre-approver' AND idcase = event_log.idcase) GROUP BY resource
+SELECT resource, count(*) as rejection_count FROM event_log WHERE activity = 'Declaration rejected by pre-approver' GROUP BY resource
+SELECT COUNT(DISTINCT idcase), resource FROM event_log WHERE activity = 'Declaration rejected by pre-approver' GROUP BY resource
+SELECT idcase, COUNT(*) AS activity_count FROM event_log WHERE activity!= 'End trip' GROUP BY idcase ORDER BY idcase;
+SELECT idcase, COUNT(*) AS num_activities FROM event_log WHERE activity!= 'End trip' GROUP BY idcase ORDER BY idcase;
+SELECT idcase, COUNT(*) AS num_activities FROM event_log WHERE activity = 'End trip' GROUP BY idcase
+SELECT idcase, COUNT(*) AS num_events FROM event_log WHERE activity = 'End trip' GROUP BY idcase
+SELECT idcase, COUNT(*) AS activity_count FROM event_log WHERE activity!= 'End trip' GROUP BY idcase HAVING COUNT(*) = (SELECT COUNT(*) FROM event_log WHERE activity = 'End trip' AND idcase = event_log.idcase)
+SELECT el1.idcase, COUNT(*) AS activity_count FROM event_log el1 JOIN event_log el2 ON el1.idcase = el2.idcase AND el1.timestamp < el2.timestamp AND el2.activity = 'End trip' GROUP BY el1.idcase
+SELECT idcase, COUNT(*) AS num_events FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log WHERE activity = 'End trip' ) AND timestamp <= ( SELECT MAX(timestamp) FROM event_log WHERE activity = 'End trip' ) GROUP BY idcase
+SELECT idcase, COUNT(*) as num_events FROM event_log WHERE activity!= 'End trip' GROUP BY idcase ORDER BY num_events DESC;
+SELECT idcase, COUNT(*) AS num_events FROM event_log WHERE activity!= 'End trip' GROUP BY idcase ORDER BY num_events DESC;
+SELECT idcase, COUNT(*) AS num_actions FROM event_log WHERE activity!= 'End trip' GROUP BY idcase
+SELECT e1.idcase, COUNT(*) AS num_actions FROM event_log e1 WHERE e1.activity = 'End trip' GROUP BY e1.idcase
+SELECT DISTINCT activity FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2018-01-01' AND '2018-07-01'
+SELECT DISTINCT activity FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2018-01-01' AND '2018-07-01'
+SELECT activity FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2018-01-01' AND '2018-06-30'
+SELECT DISTINCT activity FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2018-01-01' AND '2018-07-01'
+SELECT activity FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2018-01-01' AND '2018-07-31'
+SELECT activity FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2018-01-01' AND '2018-07-31'
+SELECT DISTINCT activity FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2018-01-01' AND '2018-06-30';
+SELECT DISTINCT activity FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2018-01-01' AND '2018-07-01'
+SELECT DISTINCT activity FROM event_log WHERE resource = 'Thomas' AND timestamp BETWEEN '2018-01-01' AND '2018-07-01'
+SELECT idcase, timestamp FROM event_log WHERE activity = 'Declaration rejected by supervisor' ORDER BY timestamp ASC;
+SELECT idcase, timestamp FROM event_log WHERE activity = 'Declaration rejected by supervisor' ORDER BY timestamp ASC;
+SELECT idcase, timestamp FROM event_log WHERE activity = 'Declaration rejected by supervisor' ORDER BY idcase, timestamp
+SELECT idcase, timestamp FROM event_log WHERE activity = 'Declaration rejected by supervisor' ORDER BY idcase, timestamp
+SELECT idcase, MIN(timestamp) AS start_time, MAX(timestamp) AS end_time FROM event_log WHERE activity = 'Declaration rejected by supervisor' GROUP BY idcase ORDER BY start_time;
+SELECT idcase, timestamp FROM event_log WHERE activity = 'Declaration rejected by supervisor' ORDER BY timestamp ASC
+SELECT * FROM event_log WHERE activity = 'Declaration rejected by supervisor' ORDER BY timestamp, idcase ASC
+SELECT * FROM event_log WHERE activity = 'Declaration rejected by supervisor' ORDER BY timestamp ASC Note: The ORDER BY timestamp ASC clause is used to sort the results in ascending order by timestamp.
+SELECT idcase, timestamp FROM event_log WHERE activity = 'Permit rejected by supervisor' ORDER BY timestamp;
+SELECT idcase, timestamp FROM event_log WHERE activity = 'Declaration rejected by supervisor' ORDER BY timestamp;
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp BETWEEN '2016-01-01' AND '2018-01-01' AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2016-01-01' AND '2018-01-01' )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp <= '2018-03-01' AND NOT EXISTS ( SELECT 1 FROM event_log WHERE idcase = event_log.idcase AND activity = 'End trip' AND timestamp <= '2018-03-01' )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND id NOT IN ( SELECT id FROM event_log WHERE activity = 'End trip' AND timestamp BETWEEN '2018-01-01' AND '2018-03-31' )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp BETWEEN '2016-01-01' AND '2018-03-31' AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'End trip' AND timestamp <= '2018-03-31' )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND id NOT IN ( SELECT id FROM event_log WHERE activity = 'End trip' AND timestamp <= '2018-03-31' )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp <= '2018-03-31' AND NOT EXISTS ( SELECT 1 FROM event_log WHERE idcase = event_log.idcase AND activity = 'End trip' AND timestamp <= '2018-03-31' )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp <= '2018-03-31' AND NOT EXISTS ( SELECT 1 FROM event_log WHERE idcase = event_log.idcase AND activity = 'End trip' AND timestamp <= '2018-03-31' )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND NOT EXISTS ( SELECT 1 FROM event_log WHERE idcase = event_log.idcase AND activity = 'End trip' AND timestamp <= '2018-03-31' )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp <= '2018-03-31' AND NOT EXISTS ( SELECT 1 FROM event_log WHERE idcase = event_log.idcase AND activity = 'End trip' AND timestamp <= '2018-03-31' )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp <= '2017-03-01' AND NOT EXISTS ( SELECT 1 FROM event_log WHERE idcase = event_log.idcase AND activity = 'End trip' AND timestamp <= '2018-03-31' )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp <= '2017-03-01' AND NOT EXISTS ( SELECT 1 FROM event_log WHERE idcase = event_log.idcase AND activity!= 'Start trip' AND timestamp <= '2018-03-31' )
+SELECT idcase FROM event_log WHERE activity = 'End trip' AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled' ) GROUP BY idcase HAVING COUNT(DISTINCT resource) > 1;
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment' INTERSECT SELECT idcase FROM event_log WHERE activity = 'Payment handled') AND resource!= (SELECT MIN(resource) FROM event_log WHERE activity = 'End trip' AND idcase = event_log.idcase)
+SELECT idcase FROM event_log WHERE activity = 'End trip' AND idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled') GROUP BY idcase HAVING COUNT(DISTINCT resource) > 1;
+SELECT idcase FROM event_log WHERE activity = 'End trip' AND idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT resource) > 1 ) AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' INTERSECT SELECT idcase FROM event_log WHERE activity = 'Payment handled' )
+SELECT DISTINCT idcase FROM event_log WHERE activity = 'End trip' AND idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT resource) > 1 ) AND idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Request payment' INTERSECT SELECT idcase FROM event_log WHERE activity = 'Payment handled' )
+SELECT idcase FROM event_log WHERE activity = 'End trip' AND id IN ( SELECT id FROM event_log WHERE activity = 'End trip' GROUP BY idcase HAVING COUNT(DISTINCT resource) > 1 ) AND id NOT IN ( SELECT id FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled' )
+SELECT DISTINCT idcase FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT resource) > 1 AND EXISTS ( SELECT 1 FROM event_log WHERE idcase = event_log.idcase AND activity = 'End trip' ) AND NOT EXISTS ( SELECT 1 FROM event_log WHERE idcase = event_log.idcase AND (activity = 'Request payment' OR activity = 'Payment handled') ) )
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled') AND idcase IN (SELECT idcase FROM event_log WHERE activity = 'End trip')
+SELECT DISTINCT idcase FROM event_log WHERE (activity = 'End trip') AND idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment') AND idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Payment handled');
+SELECT idcase, COUNT(DISTINCT resource) AS num_resources, SUM(cost) AS total_cost FROM event_log GROUP BY idcase;
+SELECT idcase, COUNT(DISTINCT resource) AS num_resources, SUM(cost) AS total_cost FROM event_log GROUP BY idcase;
+SELECT idcase, COUNT(DISTINCT resource) AS num_resources, SUM(cost) AS total_cost FROM event_log GROUP BY idcase
+SELECT idcase, COUNT(DISTINCT resource) FROM event_log GROUP BY idcase;
+SELECT idcase, count(distinct resource) FROM event_log group by idcase
+SELECT idcase, SUM(cost) AS total_cost, COUNT(DISTINCT resource) AS num_resources FROM event_log GROUP BY idcase
+SELECT idcase, SUM(cost) AS total_cost, COUNT(DISTINCT resource) AS num_resources FROM event_log GROUP BY idcase
+SELECT idcase, SUM(cost) AS total_cost, COUNT(DISTINCT resource) AS num_resources FROM event_log GROUP BY idcase;
+SELECT idcase, SUM(cost) AS total_cost, COUNT(DISTINCT resource) AS num_resources FROM event_log GROUP BY idcase
+SELECT idcase, COUNT(DISTINCT resource) AS num_resources, SUM(cost) AS total_cost FROM event_log GROUP BY idcase;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(CASE WHEN activity LIKE 'Permit%' THEN 1 END) > 1
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(CASE WHEN activity LIKE 'Permit%' THEN 1 END) > 1
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(CASE WHEN activity LIKE 'Permit%' THEN 1 END) >= 2;
+SELECT idcase FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase HAVING COUNT(*) > 1
+SELECT idcase FROM event_log WHERE activity LIKE 'Permit%' AND idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 1 )
+SELECT idcase FROM event_log WHERE activity LIKE 'Permit%' AND idcase IN ( SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(*) > 1 )
+SELECT idcase FROM (SELECT idcase, COUNT(*) AS count FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase) AS e1 WHERE count > 1
+SELECT idcase FROM event_log WHERE activity LIKE 'Permit%' AND id IN ( SELECT id FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 1 )
+SELECT Based on the provided SQL examples and database schema, I'll answer the questions: 1. What are the actions related to permits and explicit declarations in the declaration management process? The SQL query SELECT DISTINCT activity FROM event_log WHERE activity LIKE '%permit%' OR activity LIKE '%declaration%' returns the distinct activities related to permits and declarations. 2. Which of the activities involve 'permit' or 'declaration' actions? The same SQL query as above returns the activities that involve 'permit' or 'declaration' actions. 3. What activities involve 'permit' or 'declaration'? Again, the same SQL query returns the activities that involve 'permit' or 'declaration'. 4. What activities involve a permit or declaration? The same SQL query returns the activities that involve a permit or declaration. 5. What information is associated with permit interventions, within the processing of a declaration? The SQL query SELECT * FROM event_log WHERE activity LIKE '%Permit%' returns all the information (id, activity, timestamp, resource, cost, idcase) associated with permit interventions during the processing of a declaration. 6. Actions related to permits were performed during the processing of which declarations? To answer this question, we would need to join the event_log table with another table that contains information about declarations. However, based on the provided schema, we don't have such a table. We would need additional information to answer this question.
+SELECT idcase FROM event_log WHERE activity LIKE 'Permit%' GROUP BY idcase HAVING COUNT(*) > 1
+SELECT id, idcase, timestamp FROM event_log WHERE (idcase, timestamp) IN ( SELECT idcase, MAX(timestamp) FROM event_log GROUP BY idcase ) ORDER BY timestamp;
+SELECT idcase, id, timestamp FROM event_log WHERE (idcase, timestamp) IN ( SELECT idcase, MAX(timestamp) FROM event_log GROUP BY idcase ) ORDER BY timestamp;
+SELECT id FROM event_log WHERE id IN (SELECT MAX(id) FROM event_log GROUP BY idcase) ORDER BY timestamp DESC;
+SELECT idcase, activity, timestamp FROM event_log WHERE (idcase, timestamp) IN ( SELECT idcase, MAX(timestamp) FROM event_log GROUP BY idcase ) ORDER BY idcase, timestamp DESC;
+SELECT id, idcase, timestamp FROM event_log WHERE id IN ( SELECT MAX(id) FROM event_log GROUP BY idcase ) ORDER BY timestamp DESC;
+SELECT idcase, id FROM event_log WHERE id IN ( SELECT MAX(id) FROM event_log GROUP BY idcase ) ORDER BY timestamp DESC;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(activity) IN (SELECT Count(activity) FROM event_log GROUP BY idcase ORDER BY Count(activity) Desc LIMIT 10) ORDER BY COUNT(activity) DESC;
+SELECT idcase, activity, timestamp FROM ( SELECT idcase, activity, timestamp, ROW_NUMBER() OVER (PARTITION BY idcase ORDER BY timestamp DESC) AS row_num FROM event_log ) AS subquery WHERE row_num = 1 ORDER BY idcase;
+SELECT idcase, MAX(timestamp) AS last_timestamp, id FROM event_log GROUP BY idcase, id ORDER BY last_timestamp DESC;
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) >= 100;
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) >= 100
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) >= 100;
+SELECT DISTINCT activity FROM event_log GROUP BY activity HAVING COUNT(*) >= 100
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) >= 100
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) >= 100
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) > 100;
+SELECT activity FROM event_log GROUP BY activity HAVING COUNT(*) >= 100
+SELECT COUNT(DISTINCT idcase), CASE WHEN activity LIKE '%employee%' THEN 'employee' WHEN activity LIKE '%supervisor%' THEN'supervisor' WHEN activity LIKE '%administration%' THEN 'administration' WHEN activity LIKE '%pre-approver%' THEN 'pre-approver' WHEN activity LIKE '%budget owner%' THEN 'budget owner' WHEN activity LIKE '%director%' THEN 'director' END AS grupo FROM event_log GROUP BY grupo ORDER BY COUNT(DISTINCT idcase) DESC;
+select count(*), 'employee' as grupo from event_log WHERE activity like '%employee%' UNION select count(*),'supervisor' as grupo from event_log WHERE activity like '%supervisor%' UNION select count(*), 'administration' as grupo from event_log WHERE activity like '%administration%' UNION select count(*), 'pre-approver' as grupo from event_log WHERE activity like '%pre-approver%' UNION select count(*), 'budget owner' as grupo from event_log WHERE activity like '%budget owner%' UNION select count(*), 'director' as grupo from event_log WHERE activity like '%director%' order by count(*)
+SELECT grupo, COUNT(DISTINCT idcase) AS num_cases FROM event_log WHERE activity LIKE '%employee%' OR activity LIKE '%supervisor%' OR activity LIKE '%administration%' OR activity LIKE '%pre-approver%' OR activity LIKE '%budget owner%' OR activity LIKE '%director%' GROUP BY grupo ORDER BY num_cases DESC;
+SELECT COUNT(DISTINCT idcase), CASE WHEN activity LIKE '%employee%' THEN 'employee' WHEN activity LIKE '%supervisor%' THEN'supervisor' WHEN activity LIKE '%administration%' THEN 'administration' WHEN activity LIKE '%pre-approver%' THEN 'pre-approver' WHEN activity LIKE '%budget owner%' THEN 'budget owner' WHEN activity LIKE '%director%' THEN 'director' END AS grupo FROM event_log GROUP BY CASE WHEN activity LIKE '%employee%' THEN 'employee' WHEN activity LIKE '%supervisor%' THEN'supervisor' WHEN activity LIKE '%administration%' THEN 'administration' WHEN activity LIKE '%pre-approver%' THEN 'pre-approver' WHEN activity LIKE '%budget owner%' THEN 'budget owner' WHEN activity LIKE '%director%' THEN 'director' END ORDER BY COUNT(DISTINCT idcase) DESC;
+SELECT grupo, COUNT(DISTINCT idcase) AS num_declarations FROM event_log WHERE activity LIKE '%employee%' OR activity LIKE '%supervisor%' OR activity LIKE '%administration%' OR activity LIKE '%pre-approver%' OR activity LIKE '%budget owner%' OR activity LIKE '%director%' GROUP BY grupo ORDER BY num_declarations;
+SELECT resource, activity, COUNT(*) FROM event_log WHERE activity LIKE '%employee%' OR activity LIKE '%supervisor%' OR activity LIKE '%administration%' OR activity LIKE '%pre-approver%' OR activity LIKE '%budget owner%' OR activity LIKE '%director%' GROUP BY resource, activity ORDER BY COUNT(*) DESC;
+SELECT grupo, COUNT(*) AS activity_count, activity FROM (SELECT CASE WHEN activity LIKE '%employee%' THEN 'employee' WHEN activity LIKE '%supervisor%' THEN'supervisor' WHEN activity LIKE '%administration%' THEN 'administration' WHEN activity LIKE '%pre-approver%' THEN 'pre-approver' WHEN activity LIKE '%budget owner%' THEN 'budget owner' WHEN activity LIKE '%director%' THEN 'director' END AS grupo, activity FROM event_log) AS grouped_activities GROUP BY grupo, activity ORDER BY activity_count DESC;
+SELECT count(DISTINCT idcase), 'employee' as grupo FROM event_log WHERE activity like '%employee%' UNION SELECT count(DISTINCT idcase),'supervisor' as grupo FROM event_log WHERE activity like '%supervisor%' UNION SELECT count(DISTINCT idcase), 'administration' as grupo FROM event_log WHERE activity like '%administration%' UNION SELECT count(DISTINCT idcase), 'pre-approver' as grupo FROM event_log WHERE activity like '%pre-approver%' UNION SELECT count(DISTINCT idcase), 'budget owner' as grupo FROM event_log WHERE activity like '%budget owner%' UNION SELECT count(DISTINCT idcase), 'director' as grupo FROM event_log WHERE activity like '%director%'
+select e1.activity, e1.resource, e1.idcase from event_log AS e1 inner join event_log AS e2 on e1.idcase = e2.idcase WHERE e2.activity = 'End trip' and e1.timestamp > e2.timestamp
+SELECT DISTINCT e1.idcase FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp
+SELECT e1.idcase FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp
+select e1.activity, e1.resource, e1.idcase from event_log AS e1 inner join event_log AS e2 on e1.idcase = e2.idcase WHERE e2.activity = 'End trip' and e1.timestamp > e2.timestamp
+SELECT e1.idcase, e1.activity, e1.timestamp FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e2.activity = 'End trip' AND e1.timestamp > e2.timestamp ORDER BY e1.idcase;
+SELECT idcase FROM event_log WHERE activity = 'Start trip' AND timestamp > (SELECT MAX(timestamp) FROM event_log WHERE activity = 'End trip' AND idcase = event_log.idcase)
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Send reminder' AND id = (SELECT MAX(id) FROM event_log WHERE idcase = event_log.idcase)
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE activity = 'Send reminder' AND id = (SELECT MAX(id) FROM event_log WHERE idcase = event_log.idcase)
+SELECT COUNT(DISTINCT idcase) AS num_cases FROM event_log WHERE activity = 'Send reminder' ORDER BY timestamp DESC
+SELECT COUNT(DISTINCT idcase) AS num_cases FROM event_log WHERE activity = 'Send reminder' AND NOT EXISTS ( SELECT 1 FROM event_log WHERE idcase = event_log.idcase AND activity!= 'Send reminder' AND timestamp > event_log.timestamp )
+SELECT COUNT(DISTINCT idcase) AS num_cases FROM event_log WHERE activity = 'Send reminder' ORDER BY timestamp DESC LIMIT 1;
+SELECT COUNT(*) AS stuck_declarations FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase AND e1.timestamp < e2.timestamp WHERE e1.activity = 'Send reminder' AND e2.activity NOT LIKE 'Send reminder%'
+SELECT DISTINCT resource FROM event_log WHERE timestamp < '2018-03-31' OR timestamp > '2018-03-31'
+SELECT DISTINCT resource FROM event_log WHERE timestamp < '2018-03-31' OR timestamp > '2018-03-31' AND resource NOT IN ( SELECT resource FROM event_log WHERE timestamp = '2018-03-31' )
+SELECT DISTINCT resource FROM event_log WHERE timestamp!= '2018-03-31' OR resource IS NULL
+SELECT resource FROM event_log WHERE timestamp = '2018-03-31' AND resource IS NULL
+SELECT resource FROM event_log WHERE timestamp < '2018-03-31' OR (timestamp = '2018-03-31' AND activity IS NULL) GROUP BY resource HAVING NOT EXISTS ( SELECT 1 FROM event_log WHERE resource = event_log.resource AND timestamp = '2018-03-31' )
+SELECT resource FROM event_log WHERE timestamp = '2018-03-31' AND idcase IS NOT NULL GROUP BY resource HAVING COUNT(DISTINCT idcase) = 0
+SELECT activity, COUNT(*) FROM event_log WHERE timestamp BETWEEN '2018-12-01' AND '2018-12-05' GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) AS frequency FROM event_log WHERE timestamp BETWEEN '2018-12-01' AND '2018-12-05' GROUP BY activity ORDER BY frequency DESC;
+SELECT activity, count(DISTINCT idcase) FROM event_log WHERE timestamp BETWEEN '2018-12-01' AND '2018-12-05' GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) AS frequency FROM event_log WHERE timestamp BETWEEN '2018-12-01' AND '2018-12-05' GROUP BY activity
+SELECT activity, count(*) FROM event_log WHERE timestamp BETWEEN '2018-12-01' AND '2018-12-05' GROUP BY activity
+SELECT activity, COUNT(DISTINCT idcase) FROM event_log WHERE timestamp BETWEEN '2018-12-01' AND '2018-12-05' GROUP BY activity
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Payment handled')
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Payment handled')
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Payment handled')
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Payment handled')
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Payment handled')
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Request payment' OR activity = 'Payment handled')
+SELECT COUNT(DISTINCT idcase) FROM event_log WHERE idcase NOT IN (SELECT idcase FROM event_log WHERE activity = 'Payment handled')
+SELECT DISTINCT idcase FROM event_log WHERE idcase NOT IN ( SELECT idcase FROM event_log WHERE activity = 'Payment handled' ORDER BY timestamp DESC LIMIT 1 )
+SELECT COUNT(DISTINCT resource), activity FROM event_log GROUP BY activity
+SELECT activity, COUNT(DISTINCT resource) FROM event_log GROUP BY activity
+SELECT activity, COUNT(DISTINCT resource) AS num_resources FROM event_log GROUP BY activity
+SELECT activity, COUNT(DISTINCT resource) AS num_resources FROM event_log GROUP BY activity
+SELECT activity, COUNT(DISTINCT resource) FROM event_log GROUP BY activity
+SELECT activity, COUNT(DISTINCT resource) AS num_employees FROM event_log GROUP BY activity
+SELECT el1.activity AS previous_activity, el2.activity AS send_reminder FROM event_log el1 JOIN event_log el2 ON el1.id = el2.id - 1 WHERE el1.activity!= 'Send reminder' AND el2.activity = 'Send reminder' ORDER BY el1.timestamp;
+SELECT el1.idcase, el1.activity, el1.timestamp FROM event_log el1 JOIN ( SELECT idcase, MAX(timestamp) AS max_timestamp FROM event_log WHERE activity = 'Send reminder' GROUP BY idcase ) el2 ON el1.idcase = el2.idcase AND el1.timestamp < el2.max_timestamp WHERE el1.activity!= 'Send reminder' ORDER BY el1.idcase, el1.timestamp;
+SELECT e1.activity, e1.resource, e1.idcase FROM event_log AS e1 INNER JOIN event_log AS e2 ON e1.idcase = e2.idcase WHERE e1.activity = 'Send reminder' AND e1.timestamp > e2.timestamp ORDER BY e1.timestamp;
+SELECT idcase, COUNT(*) AS num_events, HISTOGRAM(num_events) AS distribution FROM event_log GROUP BY idcase ORDER BY num_events;
+SELECT count_events, COUNT(*) as num_cases FROM ( SELECT idcase, COUNT(*) as count_events FROM event_log GROUP BY idcase ) as subquery GROUP BY count_events ORDER BY count_events;
+SELECT events_per_case, COUNT(*) as count_of_cases FROM ( SELECT idcase, COUNT(*) as events_per_case FROM event_log GROUP BY idcase ) as subquery GROUP BY events_per_case ORDER BY events_per_case;
+SELECT count(*) as event_count, count(distinct idcase) as num_cases FROM event_log GROUP BY count(*) ORDER BY event_count;
+SELECT COUNT(idcase), COUNT(*) as num_actions FROM event_log GROUP BY COUNT(idcase) ORDER BY num_actions;
+SELECT AVG(SUM(cost)) FROM event_log GROUP BY idcase
+SELECT AVG(SUM(cost)) FROM event_log GROUP BY idcase
+SELECT AVG(SUM(cost)) FROM event_log GROUP BY idcase
+SELECT AVG(SUM(cost)) FROM event_log GROUP BY idcase
+SELECT AVG(SUM(cost)) FROM event_log GROUP BY idcase
+SELECT AVG(cost) FROM event_log
+SELECT resource, AVG(cost) AS mean_cost FROM event_log GROUP BY resource
+SELECT resource, AVG(cost) FROM event_log GROUP BY resource
+SELECT resource, AVG(cost) AS mean_cost FROM event_log GROUP BY resource;
+SELECT resource, AVG(cost) AS mean_cost FROM event_log GROUP BY resource;
+SELECT resource, AVG(cost) AS mean_cost FROM event_log GROUP BY resource;
+SELECT employee, AVG(cost) AS mean_cost FROM event_log GROUP BY employee
+SELECT resource, COUNT(*) as frequency FROM event_log GROUP BY resource ORDER BY frequency DESC LIMIT 10;
+SELECT resource, COUNT(*) as frequency FROM event_log GROUP BY resource ORDER BY frequency DESC LIMIT 10;
+SELECT resource, COUNT(*) as frequency FROM event_log GROUP BY resource ORDER BY frequency DESC LIMIT 10;
+SELECT resource, COUNT(*) as frequency FROM event_log GROUP BY resource ORDER BY frequency DESC LIMIT 10;
+SELECT resource, COUNT(*) as event_count FROM event_log GROUP BY resource ORDER BY event_count DESC LIMIT 10;
+SELECT resource, COUNT(*) as count FROM event_log GROUP BY resource ORDER BY count DESC LIMIT 10;
+SELECT strftime('%Y-%m-%d', timestamp), count(*) FROM event_log GROUP BY strftime('%Y-%m-%d', timestamp)
+SELECT DATE(timestamp) AS date, COUNT(*) AS occurrences FROM event_log GROUP BY DATE(timestamp) ORDER BY date;
+SELECT DATE(timestamp) AS date, COUNT(*) AS count FROM event_log GROUP BY DATE(timestamp) ORDER BY date;
+SELECT idcase, activity, resource1, resource2 FROM ( SELECT idcase, activity, resource, LAG(resource) OVER (PARTITION BY idcase, activity ORDER BY timestamp) AS resource1, resource AS resource2 FROM event_log ) AS subquery WHERE resource1 IS NOT NULL AND resource1 <> resource2;
+SELECT idcase, activity, resource1, resource2 FROM ( SELECT idcase, activity, resource, LAG(resource) OVER (PARTITION BY idcase, activity ORDER BY timestamp) AS resource1, LAG(resource, 1, '') OVER (PARTITION BY idcase, activity ORDER BY timestamp) AS resource2 FROM event_log ) AS t WHERE resource1!= resource2;
+SELECT idcase, activity FROM event_log WHERE id IN ( SELECT id FROM event_log WHERE idcase IN ( SELECT idcase FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 1 AND MIN(id) <> MAX(id) ) )
+SELECT el1.idcase, COUNT(el2.id) AS num_events_before_declaration FROM event_log el1 LEFT JOIN event_log el2 ON el1.idcase = el2.idcase AND el1.timestamp > el2.timestamp WHERE el1.activity = 'Declaration final approved by director' GROUP BY el1.idcase
+SELECT AVG(preceding_events) AS average_preceding_events FROM ( SELECT idcase, COUNT(*) AS preceding_events FROM event_log WHERE activity = 'Declaration final approved by director' GROUP BY idcase ) AS preceding_events_count
+SELECT idcase, COUNT(*) AS num_interventions FROM event_log WHERE activity = 'Declaration final approved by director' GROUP BY idcase
+SELECT activity, count(*) FROM event_log WHERE activity = 'Declaration approved by supervisor' AND timestamp BETWEEN '2017-01-01' AND '2018-01-01' GROUP BY activity UNION SELECT activity, count(*) FROM event_log WHERE activity = 'Permit rejected by employee' AND timestamp BETWEEN '2018-01-01' AND '2019-01-01' GROUP BY activity
+SELECT id, activity, timestamp AS permit_submitted, (SELECT timestamp FROM event_log WHERE activity = 'Permit approved by administration' AND id < e.id ORDER BY id DESC LIMIT 1) AS permit_approved, TIMESTAMPDIFF(SECOND, permit_submitted, permit_approved) AS time_interval FROM event_log e WHERE activity = 'Permit submitted by employee' ORDER BY time_interval;
+WITH RankedEvents AS ( SELECT id, activity, timestamp, LEAD(timestamp) OVER (PARTITION BY idcase ORDER BY timestamp) AS next_timestamp, idcase FROM event_log ) SELECT idcase, coalesce((strftime('%s', next_timestamp) - strftime('%s', timestamp)), 0) as duration FROM RankedEvents WHERE activity IN ('Permit requested by employee', 'Permit approved by administration') AND next_timestamp IS NOT NULL;
+SELECT DISTINCT(idcase) FROM (SELECT idcase, activity, LEAD(activity) OVER (PARTITION BY idcase ORDER BY timestamp) AS next_activity FROM event_log) where activity = next_activity
+SELECT DISTINCT(idcase) FROM (SELECT idcase, activity, LEAD(activity) OVER (PARTITION BY idcase ORDER BY timestamp) AS next_activity FROM event_log) WHERE activity = next_activity;
+SELECT DISTINCT(idcase) FROM (SELECT idcase, activity, LEAD(activity) OVER (PARTITION BY idcase ORDER BY timestamp) AS next_activity FROM event_log) WHERE activity = next_activity;
+SELECT idcase FROM event_log GROUP BY idcase HAVING COUNT(DISTINCT activity) > 1
+SELECT DISTINCT(idcase) FROM (SELECT idcase, activity, LEAD(activity) OVER (PARTITION BY idcase ORDER BY timestamp) AS next_activity FROM event_log) WHERE activity = next_activity
+SELECT idcase FROM event_log GROUP BY idcase, activity HAVING COUNT(*) > 1
+SELECT el1.idcase, el1.activity, el1.timestamp FROM event_log el1 JOIN event_log el2 ON el1.id = el2.id - 1 WHERE el1.activity = el2.activity;
+SELECT idcase FROM ( SELECT idcase, activity, LAG(activity) OVER (PARTITION BY idcase ORDER BY timestamp) AS prev_activity FROM event_log ) AS subquery WHERE activity = prev_activity;
+SELECT idcase, activity, timestamp FROM ( SELECT idcase, activity, timestamp, ROW_NUMBER() OVER (PARTITION BY idcase, activity ORDER BY timestamp) AS row_num FROM event_log ) AS subquery WHERE row_num > 1 ORDER BY idcase, activity, timestamp;
+SELECT idcase, activity FROM ( SELECT idcase, activity, LAG(activity) OVER (PARTITION BY idcase ORDER BY timestamp) AS prev_activity FROM event_log ) AS subquery WHERE activity = prev_activity;
+SELECT el1.idcase, el1.activity, el1.timestamp FROM event_log el1 JOIN event_log el2 ON el1.id = el2.id - 1 WHERE el1.activity = el2.activity ORDER BY el1.id;
+SELECT idcase FROM ( SELECT idcase, activity, timestamp, LAG(activity) OVER (PARTITION BY idcase ORDER BY timestamp) AS prev_activity FROM event_log ) AS subquery WHERE activity = prev_activity GROUP BY idcase HAVING COUNT(*) >= 2;
+SELECT DISTINCT resource FROM event_log WHERE activity LIKE '%by supervisor%';
+SELECT DISTINCT(resource) FROM event_log WHERE activity LIKE '%supervisor%';
+SELECT DISTINCT(resource) FROM event_log WHERE activity LIKE '%budget%' OR activity LIKE '%financial%';
+SELECT DISTINCT(resource) FROM event_log WHERE activity LIKE '%budget owner%'
